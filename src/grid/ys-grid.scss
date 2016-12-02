@@ -1,3 +1,103 @@
-.ys-grid{
+/**
+ * Grid
+ */
+@import '../sys-mixins';
+@import '../sys-variables';
+
+@mixin cell-width($size, $columns, $gutter){
+	position: relative;
+	float: left;
+	width: #{(($size / $columns) * 100)+"%"};
+	padding-left: $gutter/2;
+	padding-right: $gutter/2;
+	min-height: 10px;
+}
+@mixin full-width(){
 	width: 100%;
 }
+/**
+ * grid container
+ */
+.ys-grid{
+	position: relative;
+	width: $ct-width;
+	margin: 0 auto 0 auto;
+	padding-left: ($grid-d-gutter/2);
+	padding-right: ($grid-d-gutter/2);
+}
+/**
+ * grid container -- row
+ */
+.ys-grid-row{
+	position: relative;
+	margin-left: ($grid-d-gutter/-2);
+	margin-right: ($grid-d-gutter/-2);
+	@include clearfix;
+}
+@for $i from 1 through $grid-max-columns{
+	.ys-cell--#{$i}{
+		@include cell-width($i, $grid-d-columns, $grid-d-gutter);
+	}
+}
+//////////////////// Desktop ////////////////////
+@media (min-width: ($media-desktop-lg - 1)){
+	.ys-grid{
+		width: $ct-width;
+		&.ys-fixed-grid{
+			width: $ct-c-width;
+		}
+	}
+}
+@media (min-width: ($media-desktop - 1)) and (max-width: ($media-desktop-lg - 1)){
+	.ys-grid{
+		width: $ct-width;
+		&.ys-fixed-grid{
+			width: $media-desktop;
+		}
+	}
+}
+//////////////////// Tablet ////////////////////
+@media (min-width: ($media-tablet - 1)) and (max-width: ($media-desktop - 1)){
+	.ys-grid{
+		width: $ct-width;
+		&.ys-fixed-grid{
+			width: $ct-width;
+		}
+	}
+	@for $i from 1 through ($grid-tablet-columns - 1) {
+		.ys-cell--#{$i},
+		.ys-cell--#{$i}-tablet.ys-cell--#{$i}-tablet{
+			@include cell-width($i, $grid-tablet-columns, $grid-tablet-gutter);
+		}
+	}
+	//other col width 100%
+	@for $i from $grid-tablet-columns through $grid-max-columns {
+		.ys-cell--#{$i},
+		.ys-cell--#{$i}-tablet.ys-cell--#{$i}-tablet{
+			@include full-width();
+		}
+	}
+}
+//////////////////// Phone ////////////////////
+@media (max-width: ($media-tablet - 1)){
+	.ys-grid{
+		width: $ct-width;
+		&.ys-fixed-grid{
+			width: $ct-width;
+		}
+	}
+	@for $i from 1 through ($grid-p-columns - 1) {
+		.ys-cell--#{$i},
+		.ys-cell--#{$i}-phone.ys-cell--#{$i}-phone{
+			@include cell-width($i, $grid-p-columns, $grid-p-gutter);
+		}
+	}
+	//other col width 100%
+	@for $i from $grid-p-columns through $grid-max-columns {
+		.ys-cell--#{$i},
+		.ys-cell--#{$i}-tablet.ys-cell--#{$i}-tablet{
+			@include full-width();
+		}
+	}
+}
+

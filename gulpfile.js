@@ -14,11 +14,11 @@ const paths = {
 		des:'dist/'
 	},
 	style:{
-		src:['src/**/*.scss','!src/sys.scss'],
+		src:['src/**/*.scss','!src/sys.scss','!src/sys-*.scss'],
 		des:'dist/'
 	},
 	script:{
-		src:['src/**/*.js','!src/sys.js'],
+		src:['src/**/*.js','!src/sys.js','!lib/**/*.js'],
 		des:'dist/'
 	},
 	image:{
@@ -27,7 +27,7 @@ const paths = {
 	},
 	lib:{
 		src:'src/lib/*',
-		des:'dist'
+		des:'dist/lib'
 	}
 }
 gulp.task('css:compile',function(){
@@ -77,7 +77,7 @@ gulp.task('clean',function(){
 	del(['dist','release']);
 })
 gulp.task('default',function(){
-	$.runSequence('clean','css:compile','css:min',['image','script:parts','scripts:all','copy']);
+	$.runSequence('clean','css:compile','css:min',['image','script:parts','script:all','copy']);
 });
 function watch(){
 	gulp.watch(paths.style.src,['css:compile','css:min']);

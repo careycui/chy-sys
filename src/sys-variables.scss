@@ -1,0 +1,28 @@
+
+$font-family: "Hiragino Sans GB", "Microsoft Yahei", arial, 宋体, sans-serif !default;
+$font-size: 12px !default;
+$lh: 1.5;
+
+// 页面宽度变量 
+$ct-c-width: 1200px !default;
+$ct-width: 100% !default;
+
+// 栅栏设置 
+$grid-d-columns: 12 !default;
+$grid-d-margin: 10px !default;
+$grid-d-gutter: 20px !default;
+
+$grid-tablet-columns: 8 !default;
+$grid-tablet-margin: $grid-d-margin !default;
+$grid-tablet-gutter: $grid-d-gutter !default;
+
+$grid-p-columns: 4 !default;
+$grid-p-margin: $grid-d-margin !default;
+$grid-p-gutter: $grid-d-gutter !default;
+
+$grid-max-columns: $grid-d-columns;
+
+$media-desktop-lg: 1200px !default; 
+$media-desktop: 960px !default;
+$desktop-width: $media-desktop;
+$media-tablet: 480px !default;

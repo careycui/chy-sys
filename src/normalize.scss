@@ -9,10 +9,11 @@
 
 /* Document
    ========================================================================== */
+@import 'sys-variables';
 
 html {
-  font-family: sans-serif; /* 1 */
-  line-height: 1.15; /* 2 */
+  font-family: $font-family; /* 1 */
+  line-height: $lh; /* 2 */
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
 }
@@ -27,7 +28,10 @@ html {
 body {
   margin: 0;
 }
-
+/* set the div`s box-sizing */
+div{
+  box-sizing: border-box;
+}
 /**
  * Add the correct display in IE 9-.
  */
