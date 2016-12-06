@@ -26,19 +26,46 @@ const paths = {
 		des:'dist/assets'
 	},
 	lib:{
-		src:'src/lib/*',
+		src:'src/lib/**/*',
 		des:'dist/lib'
 	}
 }
 gulp.task('css:compile',function(){
+	// return gulp.src(paths.style.src)
+	// 		.pipe($.sass().on('error',$.sass.logError))
+	// 		.pipe(gulp.dest(paths.style.des));
 	return gulp.src(paths.style.src)
-			.pipe($.sass().on('error',$.sass.logError))
+			.pipe($.compass({
+				config_file:'./config.rb',
+				css: 'dist',
+				sass:'src'
+			})
+			.on('error', function(error) {
+		      console.log(error);
+		      this.emit('end');
+		    }))
 			.pipe(gulp.dest(paths.style.des));
 });
 gulp.task('css:min',function(){
+	// return gulp.src(paths.min_css.src)
+	// 		.pipe($.sourcemaps.init())
+	// 		.pipe($.sass().on('error',$.sass.logError))
+	// 		.pipe(gulp.dest(paths.min_css.des))
+	// 		.pipe($.csso())
+	// 		.pipe($.concat('sys.min.css'))
+	// 		.pipe($.sourcemaps.write('.'))
+	// 		.pipe(gulp.dest(paths.min_css.des));
 	return gulp.src(paths.min_css.src)
 			.pipe($.sourcemaps.init())
-			.pipe($.sass().on('error',$.sass.logError))
+			.pipe($.compass({
+				config_file:'./config.rb',
+				css: 'dist',
+				sass:'src',
+				style: 'expanded'
+			}).on('error', function(error) {
+		      console.log(error);
+		      this.emit('end');
+		    }))
 			.pipe(gulp.dest(paths.min_css.des))
 			.pipe($.csso())
 			.pipe($.concat('sys.min.css'))
@@ -78,6 +105,9 @@ gulp.task('clean',function(){
 })
 gulp.task('default',function(){
 	$.runSequence('clean','css:compile','css:min',['image','script:parts','script:all','copy']);
+});
+gulp.task('cp',function(){
+	console.log($);
 });
 function watch(){
 	gulp.watch(paths.style.src,['css:compile','css:min']);

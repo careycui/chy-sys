@@ -1,3 +1,4 @@
+@charset "utf-8";
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /**
@@ -16,6 +17,7 @@ html {
   line-height: $lh; /* 2 */
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
+  font-size: $font-size;
 }
 
 /* Sections
@@ -258,9 +260,8 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: sans-serif; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
+  font-family: $font-family; /* 1 */
+  font-size: 100%;
   margin: 0; /* 2 */
 }
 

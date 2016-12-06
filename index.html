@@ -5,16 +5,65 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Test</title>
+	<link rel="stylesheet" type="text/css" href="dist/lib/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="dist/sys.css">
 	<style type="text/css">
 		div[class^="ys-cell"]{
 			border: 1px solid black;
-			height: 30px;
+			min-height: 30px;
 			margin-top: 10px;
+			padding: 10px;
+		}
+		body{
+			padding: 10px;
 		}
 	</style>
 </head>
 <body>
+<div class="ys-grid">
+	<div class="ys-grid-row">
+		<div class="ys-cell--12">
+			<button class="ys-btn ys-link-btn">测试</button>
+			<button class="ys-btn">测试</button>
+			<button class="ys-btn ys-link-btn--reverse">测试</button>
+			<button class="ys-btn ys-color-btn--primary">测试</button>
+		</div>
+		<div class="ys-cell--12">
+			<button class="ys-btn ys-link-btn disabled">测试</button>
+			<button class="ys-btn disabled">测试</button>
+			<button class="ys-btn ys-link-btn--reverse disabled">测试</button>
+			<button class="ys-btn ys-color-btn--primary disabled">测试</button>
+		</div>
+		<div class="ys-cell--12">
+			<button class="ys-btn ys-link-btn ys-btn--sm">测试</button>
+			<button class="ys-btn ys-btn--sm">测试</button>
+			<button class="ys-btn ys-link-btn--reverse ys-btn--sm">测试</button>
+			<button class="ys-btn ys-color-btn--primary ys-btn--sm">测试</button>
+			<button class="ys-btn ys-link-btn">测试</button>
+			<button class="ys-btn">测试</button>
+			<button class="ys-btn ys-link-btn--reverse">测试</button>
+			<button class="ys-btn ys-color-btn--primary">测试</button>
+			<button class="ys-btn ys-link-btn ys-btn--lg">测试</button>
+			<button class="ys-btn ys-btn--lg">测试</button>
+			<button class="ys-btn ys-link-btn--reverse ys-btn--lg">测试</button>
+			<button class="ys-btn ys-color-btn--primary ys-btn--lg">测试</button>
+		</div>
+		<div class="ys-cell--12">
+			<button class="ys-btn ys-btn--sm"><i class="fa fa-plus" aria-hidden="true"></i>添加</button>
+			<button class="ys-btn ys-link-btn ys-btn--sm"><i class="fa fa-plus" aria-hidden="true"></i>添加</button>
+			<button class="ys-btn ys-link-btn--reverse ys-btn--sm"><i class="fa fa-plus" aria-hidden="true"></i>添加</button>
+			<button class="ys-btn ys-color-btn--primary ys-btn--sm"><i class="fa fa-plus" aria-hidden="true"></i>添加</button>
+			<button class="ys-btn"><i class="fa fa-plus" aria-hidden="true"></i>添加</button>
+			<button class="ys-btn ys-link-btn"><i class="fa fa-plus" aria-hidden="true"></i>添加</button>
+			<button class="ys-btn ys-link-btn--reverse"><i class="fa fa-plus" aria-hidden="true"></i>添加</button>
+			<button class="ys-btn ys-color-btn--primary"><i class="fa fa-plus" aria-hidden="true"></i>添加</button>
+			<button class="ys-btn ys-btn--lg"><i class="fa fa-plus" aria-hidden="true"></i>添加</button>
+			<button class="ys-btn ys-link-btn ys-btn--lg"><i class="fa fa-plus" aria-hidden="true"></i>添加</button>
+			<button class="ys-btn ys-link-btn--reverse ys-btn--lg"><i class="fa fa-plus" aria-hidden="true"></i>添加</button>
+			<button class="ys-btn ys-color-btn--primary ys-btn--lg"><i class="fa fa-plus" aria-hidden="true"></i>添加</button>
+		</div>
+	</div>
+</div>
 <div class="ys-grid">
 	<div class="ys-grid-row">
 		<div class="ys-cell--1">

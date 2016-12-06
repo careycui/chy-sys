@@ -1,3 +1,4 @@
+@charset "utf-8";
 /**
  * Grid
  */
@@ -32,7 +33,7 @@
 	position: relative;
 	margin-left: ($grid-d-gutter/-2);
 	margin-right: ($grid-d-gutter/-2);
-	@include clearfix;
+	@include clearfix();
 }
 @for $i from 1 through $grid-max-columns{
 	.ys-cell--#{$i}{

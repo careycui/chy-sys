@@ -1,0 +1,109 @@
+@charset "utf-8";
+/**
+ * 基本btn样式
+ */
+@import "compass/css3";
+@import "../sys-variables";
+@import "../sys-mixins";
+
+@mixin disabled(){
+	color: $btn-disable-color !important;
+	cursor: not-allowed !important;
+}
+/////////////////////// Base Button //////////////////////
+.ys-btn{
+	display: inline;
+	border: none;
+	background-color: $btn-color;
+	outline: none;
+	text-align: center;
+	cursor: pointer;
+	height: $btn-height;
+	line-height: $btn-height;
+	min-width: $btn-min-width;
+	vertical-align: middle;
+	@include transition(all .25s);
+	@include border-radius(2px);
+
+	&:hover,&.active{
+		color: $btn-lh-color;	
+	}
+	&.disabled{
+		@include disabled();
+	}
+}
+/////////////////////// Link Button //////////////////////
+/**
+ * link btn
+ *    has border,no bg color
+ */
+.ys-link-btn{
+	line-height: $btn-height - 2px;
+	border: 1px solid $btn-bdcolor;
+
+	&:hover,&.active{
+		color: $btn-lh-color;
+		border-color: $btn-lh-color;
+	}
+	&.disabled{
+		@include disabled();
+		&:hover{
+			border-color: $btn-bdcolor;
+		}
+	}
+}
+/**
+ * link btn reverse
+ *    has color border,has color text,no bg color
+ */
+.ys-link-btn--reverse{
+	line-height: $btn-height - 2px;
+	border: 1px solid $btn-lh-color;
+	color: $btn-lh-color;
+
+	&:hover,&.active{
+		color: #fff;
+		background-color: $btn-lh-color;
+	}
+	&.disabled{
+		border-color: $btn-bdcolor;
+		@include disabled();
+		&:hover{
+			border-color: $btn-bdcolor;
+			background-color: $btn-color;
+		}
+	}
+}
+/////////////////////// Link Button //////////////////////
+.ys-color-btn--primary{
+	color: #fff;
+	background-color: $btn-primary-color;
+
+	&:hover,&.active{
+		color: #fff;
+		background-color: darken($btn-primary-color,5%);
+	}
+	&.disabled{
+		color: #fff !important;
+		background-color: lighten($btn-primary-color,10%);
+	}
+}
+/////////////////////// Button Size //////////////////////
+.ys-btn--sm{
+	height: $btn-height - 4px;
+	line-height: $btn-height - 4px;
+	font-size: 12px;
+
+	&[class*="ys-link-btn"]{
+		line-height: $btn-height - 6px;
+	}
+}
+.ys-btn--lg{
+	height: $btn-height + 10px;
+	line-height: $btn-height + 10px;
+	font-size: 16px;
+
+	&[class*="ys-link-btn"]{
+		line-height: $btn-height + 8px;
+	}
+}
