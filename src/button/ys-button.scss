@@ -99,11 +99,11 @@
 	}
 }
 .ys-btn--lg{
-	height: $btn-height + 10px;
-	line-height: $btn-height + 10px;
+	height: $btn-height + 8px;
+	line-height: $btn-height + 8px;
 	font-size: 16px;
 
 	&[class*="ys-link-btn"]{
-		line-height: $btn-height + 8px;
+		line-height: $btn-height + 6px;
 	}
 }
