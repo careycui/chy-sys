@@ -3,8 +3,8 @@
  * 基本btn样式
  */
 @import "compass/css3";
-@import "../sys-variables";
-@import "../sys-mixins";
+@import "../sys_variables";
+@import "../sys_mixins";
 
 @mixin disabled(){
 	color: $btn-disable-color !important;
@@ -21,6 +21,7 @@
 	height: $btn-height;
 	line-height: $btn-height;
 	min-width: $btn-min-width;
+	padding: 0 15px;
 	vertical-align: middle;
 	@include transition(all .25s);
 	@include border-radius(2px);
@@ -56,7 +57,7 @@
  * link btn reverse
  *    has color border,has color text,no bg color
  */
-.ys-link-btn--reverse{
+.ys-link-btn-reverse{
 	line-height: $btn-height - 2px;
 	border: 1px solid $btn-lh-color;
 	color: $btn-lh-color;
@@ -75,7 +76,7 @@
 	}
 }
 /////////////////////// Link Button //////////////////////
-.ys-color-btn--primary{
+.ys-color-btn-primary{
 	color: #fff;
 	background-color: $btn-primary-color;
 
@@ -89,7 +90,7 @@
 	}
 }
 /////////////////////// Button Size //////////////////////
-.ys-btn--sm{
+.ys-btn-sm{
 	height: $btn-height - 4px;
 	line-height: $btn-height - 4px;
 	font-size: 12px;
@@ -98,7 +99,7 @@
 		line-height: $btn-height - 6px;
 	}
 }
-.ys-btn--lg{
+.ys-btn-lg{
 	height: $btn-height + 8px;
 	line-height: $btn-height + 8px;
 	font-size: 16px;

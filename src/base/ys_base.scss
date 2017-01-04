@@ -1,0 +1,37 @@
+@charset "utf-8";
+/**
+ * 基本btn样式
+ */
+@import "compass/css3";
+@import "../sys_variables";
+@import "../sys_mixins";
+
+// 基本字体样式
+html {
+  font-family: $font-family; /* 1 */
+  line-height: $lh; /* 2 */
+  -ms-text-size-adjust: 100%; /* 3 */
+  -webkit-text-size-adjust: 100%; /* 3 */
+  font-size: $font-size;
+}
+//标题 h1 ~ h6样式
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	margin: 0 0 14px 0;
+}
+h1 {
+	font-size: $font-size*1.71;
+}
+h2 {
+	font-size: $font-size*1.5;
+}
+h3 {
+	font-size: $font-size*1.3;
+}
+h4, h5 {
+	font-size: $font-size;
+}
+h6 {
+	font-size: 12px;
+}
+//段落样式 p

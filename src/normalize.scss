@@ -10,16 +10,15 @@
 
 /* Document
    ========================================================================== */
-@import 'sys-variables';
+@import 'sys_variables';
 
-html {
-  font-family: $font-family; /* 1 */
-  line-height: $lh; /* 2 */
-  -ms-text-size-adjust: 100%; /* 3 */
-  -webkit-text-size-adjust: 100%; /* 3 */
-  font-size: $font-size;
+*,
+*:after,
+*:before {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 /* Sections
    ========================================================================== */
 
@@ -32,6 +31,8 @@ body {
 }
 /* set the div`s box-sizing */
 div{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 /**

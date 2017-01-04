@@ -2,8 +2,8 @@
 /**
  * Grid
  */
-@import '../sys-mixins';
-@import '../sys-variables';
+@import '../sys_mixins';
+@import '../sys_variables';
 
 @mixin cell-width($size, $columns, $gutter){
 	position: relative;
@@ -27,7 +27,7 @@
 	padding-right: ($grid-d-gutter/2);
 }
 /**
- * grid container -- row
+ * grid container - row
  */
 .ys-grid-row{
 	position: relative;
@@ -36,7 +36,7 @@
 	@include clearfix();
 }
 @for $i from 1 through $grid-max-columns{
-	.ys-cell--#{$i}{
+	.ys-cell-#{$i}{
 		@include cell-width($i, $grid-d-columns, $grid-d-gutter);
 	}
 }
@@ -66,15 +66,15 @@
 		}
 	}
 	@for $i from 1 through ($grid-tablet-columns - 1) {
-		.ys-cell--#{$i},
-		.ys-cell--#{$i}-tablet.ys-cell--#{$i}-tablet{
+		.ys-cell-#{$i},
+		.ys-cell-#{$i}-tablet.ys-cell-#{$i}-tablet{
 			@include cell-width($i, $grid-tablet-columns, $grid-tablet-gutter);
 		}
 	}
 	//other col width 100%
 	@for $i from $grid-tablet-columns through $grid-max-columns {
-		.ys-cell--#{$i},
-		.ys-cell--#{$i}-tablet.ys-cell--#{$i}-tablet{
+		.ys-cell-#{$i},
+		.ys-cell-#{$i}-tablet.ys-cell-#{$i}-tablet{
 			@include full-width();
 		}
 	}
@@ -88,15 +88,15 @@
 		}
 	}
 	@for $i from 1 through ($grid-p-columns - 1) {
-		.ys-cell--#{$i},
-		.ys-cell--#{$i}-phone.ys-cell--#{$i}-phone{
+		.ys-cell-#{$i},
+		.ys-cell-#{$i}-phone.ys-cell-#{$i}-phone{
 			@include cell-width($i, $grid-p-columns, $grid-p-gutter);
 		}
 	}
 	//other col width 100%
 	@for $i from $grid-p-columns through $grid-max-columns {
-		.ys-cell--#{$i},
-		.ys-cell--#{$i}-tablet.ys-cell--#{$i}-tablet{
+		.ys-cell-#{$i},
+		.ys-cell-#{$i}-tablet.ys-cell-#{$i}-tablet{
 			@include full-width();
 		}
 	}
