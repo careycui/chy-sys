@@ -35,3 +35,52 @@ h6 {
 	font-size: 12px;
 }
 //段落样式 p
+
+//分割线 hr
+hr {
+	display: block;
+    padding: 0;
+    border: 0;
+    height: 0;
+    border-top: 1px solid #e2e2e2;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+//列表 ul li
+ul, ol {
+	padding-left: 2em;
+	margin-bottom: 0;
+}
+.list-unstyled {
+	list-style: none;
+	padding-left: 0;
+}
+.list-inline {
+	padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+}
+.list-inline > li {
+	display: inline-block;
+	padding: 0 5px;
+}
+
+//table 
+table {
+	text-align: center;
+}
+
+//img
+.ys-responsive-img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+//超链接
+a {
+	text-decoration: none;	
+}
