@@ -28,25 +28,55 @@
     	vertical-align: bottom;
     }
 }
+// 条纹表格
 .ys-table-striped tbody > tr:nth-child(odd){
 	background-color: $tr-bg-color;
 }
+
+//  边框表格
 .ys-table-bordered{
 	border: 1px solid $table-border-color;
 }
 .ys-table-bordered tbody > tr:last-child > td{
 	border-bottom: 0;
 }
+//	圆角边框
 .ys-table-radius{
-	@include border-radius(2px);
+	@include border-radius(5px);
 }
+
 .ys-table-hover tbody > tr{
 	@include transition(background .2s);
+	cursor: pointer;
 
 	&:hover{
 		background-color: darken($tr-bg-color,5%);
 	}
 	&:nth-child(odd):hover{
 		background-color: darken($tr-bg-color,10%);
+	}
+}
+//	带工具条表格
+.ys-tool-table{
+	position: relative;
+	max-width: 100%;
+
+	& .ys-tool-table-header{
+		position: relative;
+		height: $table-header-h;
+		margin-bottom: 10px;
+		line-height: $table-header-h;
+		vertical-align: middle;
+		background-color: #f8f8f8;
+		border-bottom: 1px solid #ddd;
+
+		& h4{
+			display: inline-block;
+			padding: 0 15px;
+		}
+		& .ys-table-toolbar{
+			display: inline-block;
+			float: right;
+		}
 	}
 }
