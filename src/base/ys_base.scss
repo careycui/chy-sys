@@ -69,7 +69,9 @@ ul, ol {
 
 //table 
 table {
+	max-width: 100%;
 	text-align: center;
+	empty-cells: show;
 }
 
 //img

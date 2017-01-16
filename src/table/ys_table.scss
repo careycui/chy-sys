@@ -1,0 +1,52 @@
+@charset "utf-8";
+/**
+ * table样式
+ */
+@import "compass/css3";
+@import "../sys_variables";
+@import "../sys_mixins";
+
+.ys-table{
+	width: $table-width;
+	margin-bottom: $table-mb;
+	line-height: $lh;
+	border-spacing: 0;
+    border-collapse: separate;
+
+    & caption{
+    	font-size: 18px;
+    }
+
+    & tr td,& tr th{
+    	padding: $table-padding;
+    	border-bottom: 1px solid $table-border-color;
+    	vertical-align: middle;
+    }
+
+    & tr th{
+    	color: $table-color;
+    	vertical-align: bottom;
+    }
+}
+.ys-table-striped tbody > tr:nth-child(odd){
+	background-color: $tr-bg-color;
+}
+.ys-table-bordered{
+	border: 1px solid $table-border-color;
+}
+.ys-table-bordered tbody > tr:last-child > td{
+	border-bottom: 0;
+}
+.ys-table-radius{
+	@include border-radius(2px);
+}
+.ys-table-hover tbody > tr{
+	@include transition(background .2s);
+
+	&:hover{
+		background-color: darken($tr-bg-color,5%);
+	}
+	&:nth-child(odd):hover{
+		background-color: darken($tr-bg-color,10%);
+	}
+}
