@@ -13,6 +13,7 @@ html {
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
   font-size: $font-size;
+  -webkit-font-smoothing: antialiased;
 }
 //标题 h1 ~ h6样式
 h1, h2, h3, h4, h5, h6 {
