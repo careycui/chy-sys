@@ -52,6 +52,7 @@ hr {
 //列表 ul li
 ul, ol {
 	padding-left: 2em;
+	margin-top: 0;
 	margin-bottom: 0;
 }
 .list-unstyled {
@@ -85,5 +86,11 @@ table {
 
 //超链接
 a {
+	color: $link-color;
 	text-decoration: none;	
+	@include transition(color .2s);
+
+	&:hover{
+		color: darken($link-color,20%);
+	}
 }

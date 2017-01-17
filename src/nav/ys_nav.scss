@@ -1,0 +1,147 @@
+@charset "utf-8";
+/**
+ * nav导航条样式
+ */
+@import "compass/css3";
+@import "../sys_variables";
+@import "../sys_mixins";
+
+.ys-nav{
+	padding: 0 5px;
+	margin: 0 auto;
+	font-size: 14px;
+	@include clearfix();
+
+	&.ys-nav-horizontal .ys-nav-brand{
+		float: left;
+	}
+
+	& .ys-nav-brand{
+		display: inline-block;
+
+		& .ys-nav-brand-logo ,& .ys-nav-brand-title{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		& .ys-nav-brand-title{
+			padding: 0 10px;
+			font-size: 20px;
+			vertical-align: middle;
+			color: #000;
+		}	
+	}
+}
+.ys-nav-brand-title {
+	em {
+		padding: 0 5px; 
+		font-size: 14px;
+	}
+}
+.ys-nav-brand-logo img{
+	display: block;
+	height: $nav-height;
+}
+.ys-nav{
+	.ys-nav-navbar{
+		padding-left: 0;
+	    list-style: none;
+
+	    & li{
+	    	display: inline-block;
+			padding: 0 5px;
+
+			&.active{
+
+				& a{
+					color: lighten(#f26a18,10%);
+				}
+			}
+
+			& a{
+				display:inline-block;
+				color: #000;
+				height: $nav-height;
+				line-height: $nav-height;
+				vertical-align: middle;
+
+				&:hover{
+					color: lighten(#f26a18,10%);
+				}
+			}
+	    }
+	}
+	
+	.ys-nav-navbar-left{
+		float: left;
+	}
+
+}
+
+
+/* 
+ *  颜色主题 dark	
+ */
+.ys-nav{
+	&.ys-nav-dark{
+		background-color: $nav-dark-bgcolor; 
+
+		& .ys-nav-brand{
+
+			& .ys-nav-brand-title{
+				color: $nav-dark-color;
+			}
+		}
+
+		& .ys-nav-navbar{
+			& li{
+				&.active{
+					background-color: darken($nav-dark-bgcolor,10%);
+
+					& a{
+						color: darken($nav-dark-color,20%);
+					}
+				}
+				& a{
+					color: $nav-dark-color;
+
+					&:hover{
+						color: darken($nav-dark-color,20%);
+					}
+				}
+			}
+		}	
+
+	}
+	
+}
+
+.ys-nav-radius{
+	@include border-radius(5px);
+}
+.ys-nav.ys-nav-vertical .ys-nav-brand{
+	width: 100%;
+	text-align: center;
+}
+.ys-nav.ys-nav-vertical{
+	padding: 0;
+	border: 1px solid #e4e4e4;
+
+	& .ys-nav-brand{
+		background-color: #f8f8f8;
+		border-top: 1px solid #e4e4e4;
+		border-bottom: 1px solid #e4e4e4;
+	}
+
+	& .ys-nav-navbar{
+		width: 100%;
+
+		& li{
+			width: 100%;
+
+			& a{
+				width: 100%;
+				text-align: center;	
+			}
+		}
+	}
+}

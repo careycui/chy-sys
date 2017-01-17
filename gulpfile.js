@@ -31,9 +31,6 @@ const paths = {
 	}
 }
 gulp.task('css:compile',function(){
-	// return gulp.src(paths.style.src)
-	// 		.pipe($.sass().on('error',$.sass.logError))
-	// 		.pipe(gulp.dest(paths.style.des));
 	return gulp.src(paths.style.src)
 			.pipe($.compass({
 				config_file:'./config.rb',
@@ -47,14 +44,6 @@ gulp.task('css:compile',function(){
 			.pipe(gulp.dest(paths.style.des));
 });
 gulp.task('css:min',function(){
-	// return gulp.src(paths.min_css.src)
-	// 		.pipe($.sourcemaps.init())
-	// 		.pipe($.sass().on('error',$.sass.logError))
-	// 		.pipe(gulp.dest(paths.min_css.des))
-	// 		.pipe($.csso())
-	// 		.pipe($.concat('sys.min.css'))
-	// 		.pipe($.sourcemaps.write('.'))
-	// 		.pipe(gulp.dest(paths.min_css.des));
 	return gulp.src(paths.min_css.src)
 			.pipe($.sourcemaps.init())
 			.pipe($.compass({

@@ -67,7 +67,7 @@
 		margin-bottom: 10px;
 		line-height: $table-header-h;
 		vertical-align: middle;
-		background-color: #f8f8f8;
+		background-color: $table-header-bgcolor;
 		border-bottom: 1px solid #ddd;
 
 		& h4{

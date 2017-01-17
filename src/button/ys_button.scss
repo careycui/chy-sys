@@ -27,7 +27,7 @@
 	@include border-radius(2px);
 
 	&:hover,&.active{
-		color: $btn-lh-color;	
+		color: $btn-lb-color;	
 	}
 	&.disabled{
 		@include disabled();
@@ -43,8 +43,8 @@
 	border: 1px solid $btn-bdcolor;
 
 	&:hover,&.active{
-		color: $btn-lh-color;
-		border-color: $btn-lh-color;
+		color: $btn-lb-color;
+		border-color: $btn-lb-color;
 	}
 	&.disabled{
 		@include disabled();
@@ -59,12 +59,12 @@
  */
 .ys-link-btn-reverse{
 	line-height: $btn-height - 2px;
-	border: 1px solid $btn-lh-color;
-	color: $btn-lh-color;
+	border: 1px solid $btn-lb-color;
+	color: $btn-lb-color;
 
 	&:hover,&.active{
 		color: #fff;
-		background-color: $btn-lh-color;
+		background-color: $btn-lb-color;
 	}
 	&.disabled{
 		border-color: $btn-bdcolor;

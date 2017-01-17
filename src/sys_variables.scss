@@ -37,13 +37,16 @@ $btn-min-width: 64px !default;
 $btn-bdcolor: #dbdbdb !default;
 
 //link btn 变量
-$btn-lh-color: #f26a18 !default;
+$btn-lb-color: #f26a18 !default;
 
 //color btn -- primary
 $btn-primary-color: #f26a18 !default;
 
 //button disabled
 $btn-disable-color: #c0c0c0 !default;
+
+//a变量
+$link-color: #0e90d2 !default;
 
 //table 
 $table-width: 100% !default;
@@ -53,4 +56,10 @@ $table-border-color: #e4e4e4 !default;
 $table-color: #a3a3a3 !default;
 $tr-bg-color: #f0f0f0 !default;
 
+$table-header-bgcolor: #f8f8f8 !default;
 $table-header-h: 40px !default;
+
+//nav 变量
+$nav-height: 40px !default;
+$nav-dark-color: #fff !default;
+$nav-dark-bgcolor: #525252 !default;
