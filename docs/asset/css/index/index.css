@@ -33,4 +33,27 @@
     max-width: 260px;
 }
 .right-content{
+    padding: 30px 0;
+}
+.show-code{
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #dfe2f1;
+}
+.show-code .show-code-result{
+    padding: 10px 20px 0;
+}
+.show-code pre.prettyprint{
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    margin-bottom: 0;
+    overflow: auto;
+}
+.font-color-tip{
+    display: inline-block;
+    margin-left: 10px;
+    width: 40px;
+    height: 14px;
+    background-color: #333;
 }

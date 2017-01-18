@@ -10,9 +10,10 @@
 html {
   font-family: $font-family; /* 1 */
   line-height: $lh; /* 2 */
+  font-size: $font-size;
+  color: $font-color;
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
-  font-size: $font-size;
   -webkit-font-smoothing: antialiased;
 }
 //标题 h1 ~ h6样式
@@ -21,19 +22,23 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 14px 0;
 }
 h1 {
-	font-size: $font-size*1.71;
+	font-size: 24px;
 }
 h2 {
-	font-size: $font-size*1.5;
+	font-size: 21px;
 }
 h3 {
-	font-size: $font-size*1.3;
+	font-size: 18px;
 }
 h4, h5 {
-	font-size: $font-size;
+	font-size: 14px;
 }
 h6 {
 	font-size: 12px;
+}
+small{
+	font-weight: normal;
+	color: lighten($font-color,15%);
 }
 //段落样式 p
 
@@ -93,4 +98,12 @@ a {
 	&:hover{
 		color: darken($link-color,20%);
 	}
+}
+
+// tip text
+.text-tip-warning{
+	color: #f0ad4e;
+}
+.text-tip-danger{
+	color: #d9534f;
 }

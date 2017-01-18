@@ -148,26 +148,50 @@
         				</div>
         			</div>
         			<div class="ys-cell-9 right-content">
-        				<h3>Normalize</h3>
+        				<h3>基础设置 <small>Base</small></h3>
         				<hr>
+                        <h4>1、盒子模型</h4>
         				<p>
-        					normalize.css只是一个很小的css文件，为默认的HTML元素样式上提供了跨浏览器的高度一致性。相对于<a href="http://meyerweb.com/eric/tools/css/reset/">reset<i class="fa fa-external-link"></i></a>的简单粗暴，<a href="https://github.com/necolas/normalize.css">normalize.css<i class="fa fa-github"></i></a>则温柔许多。统一样式的同时保留可辨识性。
-        				</p>
-        				<p>
-        					<a href="http://meyerweb.com/eric/tools/css/reset/">reset<i class="fa fa-external-link"></i></a>简单粗暴的通配符：
+        					YSUI 将所有元素的盒子模型设为<strong>border-box</strong>。
         				</p>
         				<p>
         					<pre class="prettyprint linenums">
-* {
-	margin: 0;
-	padding: 0;
-	border:0;
-  }
+*,
+*:after,
+*:before {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
         					</pre>
+                            <span class="text-tip-warning">注：使用通配符'*'是不好的。不过暂时没法解决这个问题/(ㄒoㄒ)/~~</span>
         				</p>
-        				<p>
-        					ysui使用 normalize.css 。
-        				</p>
+                        <h4>2、字体</h4>
+                        <p>
+                            字体设置为 <strong> Arial, Helvetica, "Microsoft Yahei", simsun, "Hiragino Sans GB", sans-serif</strong>，基础字号为<strong>14px</strong>，基础行高 <strong>line-height:1.5</strong>，字体颜色 #333<span class="font-color-tip"></span>。
+                            <ul class="list-unstyled">
+                                <li>Arial：英文字符 Mac&Win</li>
+                                <li>Helvetica：英文字符 Mac</li>
+                                <li>Microsoft Yahei：微软雅黑，中文字符</li>
+                                <li>simsun：宋体，中文字符</li>
+                                <li>Hiragino Sans GB：冬青黑体 Mac</li>
+                            </ul>
+                            <pre class="prettyprint linenums">
+html {
+  font-family: "Microsoft Yahei", simsun, "Hiragino Sans GB", arial, sans-serif;
+  /* 1 */
+  line-height: 1.5;
+  /* 2 */
+  font-size: 14px;
+  color: #333;
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-font-smoothing: antialiased;
+}
+                            </pre>
+                        </p>
         			</div>
         		</div>
         	</div>
