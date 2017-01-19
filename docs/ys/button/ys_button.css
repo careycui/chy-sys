@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/**
+ * 基本btn样式
+ */
+.ys-btn {
+  display: inline;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  height: 32px;
+  line-height: 32px;
+  min-width: 64px;
+  padding: 0 15px;
+  vertical-align: middle;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.ys-btn:hover, .ys-btn.active {
+  color: #f26a18;
+}
+.ys-btn.disabled {
+  color: #c0c0c0 !important;
+  cursor: not-allowed !important;
+}
+
+/**
+ * link btn
+ *    has border,no bg color
+ */
+.ys-link-btn {
+  line-height: 30px;
+  border: 1px solid #dbdbdb;
+}
+.ys-link-btn:hover, .ys-link-btn.active {
+  color: #f26a18;
+  border-color: #f26a18;
+}
+.ys-link-btn.disabled {
+  color: #c0c0c0 !important;
+  cursor: not-allowed !important;
+}
+.ys-link-btn.disabled:hover {
+  border-color: #dbdbdb;
+}
+
+/**
+ * link btn reverse
+ *    has color border,has color text,no bg color
+ */
+.ys-link-btn-reverse {
+  line-height: 30px;
+  border: 1px solid #f26a18;
+  color: #f26a18;
+}
+.ys-link-btn-reverse:hover, .ys-link-btn-reverse.active {
+  color: #fff;
+  background-color: #f26a18;
+}
+.ys-link-btn-reverse.disabled {
+  border-color: #f7a879;
+  color: #f7a879 !important;
+}
+.ys-link-btn-reverse.disabled:hover {
+  color: #f7a879 !important;
+  border-color: #f7a879;
+  background-color: transparent;
+}
+
+.ys-color-btn-primary {
+  color: #fff;
+  background-color: #f26a18;
+}
+.ys-color-btn-primary:hover, .ys-color-btn-primary.active {
+  color: #fff;
+  background-color: #e45e0d;
+}
+.ys-color-btn-primary.disabled {
+  color: #fff !important;
+  background-color: #f7a879;
+}
+
+.ys-btn-sm {
+  height: 28px;
+  line-height: 28px;
+  font-size: 12px;
+}
+.ys-btn-sm[class*="ys-link-btn"] {
+  line-height: 26px;
+}
+
+.ys-btn-lg {
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+}
+.ys-btn-lg[class*="ys-link-btn"] {
+  line-height: 38px;
+}

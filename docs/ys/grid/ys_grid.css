@@ -1,0 +1,341 @@
+/**
+ * Grid
+ */
+/**
+ * grid container
+ */
+.ys-grid {
+  position: relative;
+  width: 100%;
+  margin: 0 auto 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/**
+ * grid container - row
+ */
+.ys-grid-row {
+  position: relative;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.ys-grid-row:before, .ys-grid-row:after {
+  content: ' ';
+  display: block;
+  visibility: hidden;
+}
+.ys-grid-row:after {
+  clear: both;
+}
+
+.ys-cell-1 {
+  position: relative;
+  float: left;
+  width: 8.33333%;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 10px;
+}
+
+.ys-cell-2 {
+  position: relative;
+  float: left;
+  width: 16.66667%;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 10px;
+}
+
+.ys-cell-3 {
+  position: relative;
+  float: left;
+  width: 25%;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 10px;
+}
+
+.ys-cell-4 {
+  position: relative;
+  float: left;
+  width: 33.33333%;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 10px;
+}
+
+.ys-cell-5 {
+  position: relative;
+  float: left;
+  width: 41.66667%;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 10px;
+}
+
+.ys-cell-6 {
+  position: relative;
+  float: left;
+  width: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 10px;
+}
+
+.ys-cell-7 {
+  position: relative;
+  float: left;
+  width: 58.33333%;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 10px;
+}
+
+.ys-cell-8 {
+  position: relative;
+  float: left;
+  width: 66.66667%;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 10px;
+}
+
+.ys-cell-9 {
+  position: relative;
+  float: left;
+  width: 75%;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 10px;
+}
+
+.ys-cell-10 {
+  position: relative;
+  float: left;
+  width: 83.33333%;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 10px;
+}
+
+.ys-cell-11 {
+  position: relative;
+  float: left;
+  width: 91.66667%;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 10px;
+}
+
+.ys-cell-12 {
+  position: relative;
+  float: left;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 10px;
+}
+
+@media (min-width: 1199px) {
+  .ys-grid {
+    width: 100%;
+  }
+  .ys-grid.ys-fixed-grid {
+    width: 1200px;
+  }
+}
+@media (min-width: 959px) and (max-width: 1200px) {
+  .ys-grid {
+    width: 100%;
+  }
+  .ys-grid.ys-fixed-grid {
+    width: 960px;
+  }
+}
+@media (min-width: 479px) and (max-width: 960px) {
+  .ys-grid {
+    width: 100%;
+  }
+  .ys-grid.ys-fixed-grid {
+    width: 100%;
+  }
+
+  .ys-cell-1,
+  .ys-cell-1-tablet.ys-cell-1-tablet {
+    position: relative;
+    float: left;
+    width: 12.5%;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 10px;
+  }
+
+  .ys-cell-2,
+  .ys-cell-2-tablet.ys-cell-2-tablet {
+    position: relative;
+    float: left;
+    width: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 10px;
+  }
+
+  .ys-cell-3,
+  .ys-cell-3-tablet.ys-cell-3-tablet {
+    position: relative;
+    float: left;
+    width: 37.5%;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 10px;
+  }
+
+  .ys-cell-4,
+  .ys-cell-4-tablet.ys-cell-4-tablet {
+    position: relative;
+    float: left;
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 10px;
+  }
+
+  .ys-cell-5,
+  .ys-cell-5-tablet.ys-cell-5-tablet {
+    position: relative;
+    float: left;
+    width: 62.5%;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 10px;
+  }
+
+  .ys-cell-6,
+  .ys-cell-6-tablet.ys-cell-6-tablet {
+    position: relative;
+    float: left;
+    width: 75%;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 10px;
+  }
+
+  .ys-cell-7,
+  .ys-cell-7-tablet.ys-cell-7-tablet {
+    position: relative;
+    float: left;
+    width: 87.5%;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 10px;
+  }
+
+  .ys-cell-8,
+  .ys-cell-8-tablet.ys-cell-8-tablet {
+    width: 100%;
+  }
+
+  .ys-cell-9,
+  .ys-cell-9-tablet.ys-cell-9-tablet {
+    width: 100%;
+  }
+
+  .ys-cell-10,
+  .ys-cell-10-tablet.ys-cell-10-tablet {
+    width: 100%;
+  }
+
+  .ys-cell-11,
+  .ys-cell-11-tablet.ys-cell-11-tablet {
+    width: 100%;
+  }
+
+  .ys-cell-12,
+  .ys-cell-12-tablet.ys-cell-12-tablet {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .ys-grid {
+    width: 100%;
+  }
+  .ys-grid.ys-fixed-grid {
+    width: 100%;
+  }
+
+  .ys-cell-1,
+  .ys-cell-1-phone.ys-cell-1-phone {
+    position: relative;
+    float: left;
+    width: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 10px;
+  }
+
+  .ys-cell-2,
+  .ys-cell-2-phone.ys-cell-2-phone {
+    position: relative;
+    float: left;
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 10px;
+  }
+
+  .ys-cell-3,
+  .ys-cell-3-phone.ys-cell-3-phone {
+    position: relative;
+    float: left;
+    width: 75%;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 10px;
+  }
+
+  .ys-cell-4,
+  .ys-cell-4-tablet.ys-cell-4-tablet {
+    width: 100%;
+  }
+
+  .ys-cell-5,
+  .ys-cell-5-tablet.ys-cell-5-tablet {
+    width: 100%;
+  }
+
+  .ys-cell-6,
+  .ys-cell-6-tablet.ys-cell-6-tablet {
+    width: 100%;
+  }
+
+  .ys-cell-7,
+  .ys-cell-7-tablet.ys-cell-7-tablet {
+    width: 100%;
+  }
+
+  .ys-cell-8,
+  .ys-cell-8-tablet.ys-cell-8-tablet {
+    width: 100%;
+  }
+
+  .ys-cell-9,
+  .ys-cell-9-tablet.ys-cell-9-tablet {
+    width: 100%;
+  }
+
+  .ys-cell-10,
+  .ys-cell-10-tablet.ys-cell-10-tablet {
+    width: 100%;
+  }
+
+  .ys-cell-11,
+  .ys-cell-11-tablet.ys-cell-11-tablet {
+    width: 100%;
+  }
+
+  .ys-cell-12,
+  .ys-cell-12-tablet.ys-cell-12-tablet {
+    width: 100%;
+  }
+}

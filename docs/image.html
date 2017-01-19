@@ -62,7 +62,7 @@
                                         <i class="fa fa-angle-left"></i> 
                                     </a>
                                 </li>
-                                <li class="active">
+                                <li>
                                     <a href="base.html">
                                         <i class="fa fa-angle-right"></i>
                                         基础设置 (Base)
@@ -104,7 +104,7 @@
                                         <i class="fa fa-angle-left"></i> 
                                     </a>
                                 </li>
-                                <li>    
+                                <li class="active">    
                                     <a href="image.html">
                                         <i class="fa fa-angle-right"></i>
                                         图片 (Image)
@@ -164,50 +164,26 @@
                         </div>
         			</div>
         			<div class="ys-cell-9 right-content">
-        				<h3>基础设置 <small>Base</small></h3>
+        				<h3>图片 <small>Image</small></h3>
         				<hr>
-                        <h4>1、盒子模型</h4>
         				<p>
-        					YSUI 将所有元素的盒子模型设为<strong>border-box</strong>。
+        					常规图片样式只需要添加<strong>ys-responsive-img</strong>。
         				</p>
-        				<p>
-        					<pre class="prettyprint linenums">
-*,
-*:after,
-*:before {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-        					</pre>
-                            <span class="text-tip-warning">注：使用通配符'*'是不好的。不过暂时没法解决这个问题/(ㄒoㄒ)/~~</span>
-        				</p>
-                        <h4>2、字体</h4>
-                        <p>
-                            字体设置为 <strong> Arial, Helvetica, "Microsoft Yahei", simsun, "Hiragino Sans GB", sans-serif</strong>，基础字号为<strong>14px</strong>，基础行高 <strong>line-height:1.5</strong>，字体颜色 #333<span class="font-color-tip"></span>。
-                            <ul class="list-unstyled">
-                                <li>Arial：英文字符 Mac&Win</li>
-                                <li>Helvetica：英文字符 Mac</li>
-                                <li>Microsoft Yahei：微软雅黑，中文字符</li>
-                                <li>simsun：宋体，中文字符</li>
-                                <li>Hiragino Sans GB：冬青黑体 Mac</li>
-                            </ul>
+                        <div class="show-code">
+                            <div class="show-code-result">
+                                <div class="img-box">
+                                    <img src="asset/img/example.jpg" class="ys-responsive-img">
+                                </div>
+                                <p>
+                                    img-box 宽 高为 200px 150px，img宽高为 1200px*460px。
+                                </p>
+                            </div>
                             <pre class="prettyprint linenums">
-html {
-  font-family: "Microsoft Yahei", simsun, "Hiragino Sans GB", arial, sans-serif;
-  /* 1 */
-  line-height: 1.5;
-  /* 2 */
-  font-size: 14px;
-  color: #333;
-  -ms-text-size-adjust: 100%;
-  /* 3 */
-  -webkit-text-size-adjust: 100%;
-  /* 3 */
-  -webkit-font-smoothing: antialiased;
-}
+&lt;img src="asset/img/example.jpg" class="ys-responsive-img"&gt;
                             </pre>
-                        </p>
+                        </div>
+
+
         			</div>
         		</div>
         	</div>

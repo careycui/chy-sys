@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/**
+ * table样式
+ */
+.ys-table {
+  width: 100%;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  border-spacing: 0;
+  border-collapse: separate;
+}
+.ys-table caption {
+  font-size: 18px;
+}
+.ys-table tr td, .ys-table tr th {
+  padding: 10px;
+  border-bottom: 1px solid #e4e4e4;
+  vertical-align: middle;
+}
+.ys-table tr th {
+  color: #a3a3a3;
+  vertical-align: bottom;
+}
+
+.ys-table-striped tbody > tr:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
+.ys-table-bordered {
+  border: 1px solid #e4e4e4;
+}
+
+.ys-table-bordered tbody > tr:last-child > td {
+  border-bottom: 0;
+}
+
+.ys-table-radius {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.ys-table-hover tbody > tr {
+  -moz-transition: background 0.2s;
+  -o-transition: background 0.2s;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+.ys-table-hover tbody > tr:hover {
+  background-color: #e3e3e3;
+}
+.ys-table-hover tbody > tr:nth-child(odd):hover {
+  background-color: #d7d7d7;
+}
+
+.ys-tool-table {
+  position: relative;
+  max-width: 100%;
+}
+.ys-tool-table .ys-tool-table-header {
+  position: relative;
+  height: 40px;
+  margin-bottom: 10px;
+  line-height: 40px;
+  vertical-align: middle;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+.ys-tool-table .ys-tool-table-header h4 {
+  display: inline-block;
+  padding: 0 15px;
+}
+.ys-tool-table .ys-tool-table-header .ys-table-toolbar {
+  display: inline-block;
+  float: right;
+}
+
+.ys-table-left {
+  text-align: left;
+}
+
+.ys-table-right {
+  text-align: right;
+}

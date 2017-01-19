@@ -28,6 +28,10 @@ const paths = {
 	lib:{
 		src:'src/lib/**/*',
 		des:'dist/lib'
+	},
+	release:{
+		src:'dist/**/*',
+		des:'docs/ys'
 	}
 }
 gulp.task('css:compile',function(){
@@ -90,11 +94,18 @@ gulp.task('copy',function(){
 			.pipe(gulp.dest(paths.lib.des));
 });
 gulp.task('clean',function(){
-	del(['dist','release']);
-})
+	del(['dist','release','docs/ys']);
+});
 gulp.task('default',function(){
 	$.runSequence('clean','css:compile','css:min',['image','script:parts','script:all','copy']);
 });
+
+// release doc
+gulp.task('release',function(){
+	return gulp.src(paths.release.src)
+			.pipe(gulp.dest(paths.release.des));
+});
+
 gulp.task('cp',function(){
 	console.log($);
 });

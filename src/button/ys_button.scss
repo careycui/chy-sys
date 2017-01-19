@@ -67,10 +67,11 @@
 		background-color: $btn-lb-color;
 	}
 	&.disabled{
-		border-color: $btn-bdcolor;
-		@include disabled();
+		border-color: lighten($btn-lb-color,20%);
+		color: lighten($btn-lb-color,20%) !important;
 		&:hover{
-			border-color: $btn-bdcolor;
+			color: lighten($btn-lb-color,20%) !important;
+			border-color: lighten($btn-lb-color,20%);
 			background-color: $btn-color;
 		}
 	}
@@ -86,7 +87,7 @@
 	}
 	&.disabled{
 		color: #fff !important;
-		background-color: lighten($btn-primary-color,10%);
+		background-color: lighten($btn-primary-color,20%);
 	}
 }
 /////////////////////// Button Size //////////////////////
