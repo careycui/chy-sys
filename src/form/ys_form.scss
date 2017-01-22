@@ -1,0 +1,44 @@
+@charset "utf-8";
+/**
+ * form表单元素样式
+ */
+@import "compass/css3";
+@import "../sys_variables";
+@import "../sys_mixins";
+
+.ys-field{
+	display: block;
+	width: 100%;
+	padding: 4px 8px;
+	border: 1px solid $input-bcolor;
+	line-height: 1.5;
+	vertical-align: middle;
+	background-color: #fff;
+	background-image: url(about:blank);
+	color: $font-color;
+
+	@include transition(border .25s,box-shadow .25s);
+
+	&:focus{
+		border-color: $input-bcolor-focus;
+	    outline: 0;
+
+	    @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075),0 0 5px rgba(59,180,242,.3));
+	}
+
+}
+// 控制大小
+// sm 小
+.ys-field-sm {
+	padding: 3px 8px;
+	font-size: 12px;
+}
+// lg 大
+.ys-field-lg {
+	font-size: 18px;
+}
+
+// 添加圆角
+.ys-form-br{
+	@include border-radius(5px);
+}

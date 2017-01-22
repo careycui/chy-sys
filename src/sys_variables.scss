@@ -1,7 +1,7 @@
 
 @charset "UTF-8";
 
-$font-family:  Arial, Helvetica, "Microsoft Yahei", simsun, "Hiragino Sans GB", sans-serif !default;
+$font-family:  "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", sans-serif !default;
 $font-size: 14px !default;
 $font-color: #333 !default;
 $lh: 1.5;
@@ -64,3 +64,8 @@ $table-header-h: 40px !default;
 $nav-height: 40px !default;
 $nav-dark-color: #fff !default;
 $nav-dark-bgcolor: #525252 !default;
+
+
+//form表单
+$input-bcolor: #e4e4e4 !default;
+$input-bcolor-focus: #3bb4f2 !default;

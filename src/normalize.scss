@@ -261,7 +261,8 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: $font-family; /* 1 */
+  // font-family: $font-family; /* 1 */
+  font-family: "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
   font-size: 100%;
   margin: 0; /* 2 */
 }

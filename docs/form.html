@@ -3,7 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>电商前端</title>
-	<link rel="stylesheet" type="text/css" href="ys/sys.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="ys/sys.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="../dist/sys.min.css">
 	<link rel="stylesheet" type="text/css" href="ys/lib/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="asset/css/index/index.css">
 	<link rel="stylesheet" type="text/css" href="asset/css/prettify.css">
@@ -62,7 +63,7 @@
                                         <i class="fa fa-angle-left"></i> 
                                     </a>
                                 </li>
-                                <li class="active">
+                                <li>
                                     <a href="base.html">
                                         <i class="fa fa-angle-right"></i>
                                         基础设置 (Base)
@@ -118,8 +119,8 @@
                                         <i class="fa fa-angle-left"></i> 
                                     </a>
                                 </li>
-                                <li>    
-                                    <a href="form.html">
+                                <li class="active">    
+                                    <a href="base.html">
                                         <i class="fa fa-angle-right"></i>
                                         表单 (Form)
                                         <i class="fa fa-angle-left"></i> 
@@ -164,54 +165,79 @@
                         </div>
         			</div>
         			<div class="ys-cell-9 right-content">
-        				<h3>基础设置 <small>Base</small></h3>
+        				<h3>表单 <small>Form</small></h3>
         				<hr>
-                        <h4>1、盒子模型</h4>
+                        <h4>1、表单元素</h4>
         				<p>
-        					YSUI 将所有元素的盒子模型设为<strong>border-box</strong>。
+        					YSUI 基本支持大部分Form表单输入元素。
         				</p>
-        				<p>
-        					<pre class="prettyprint linenums">
-*,
-*:after,
-*:before {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-        					</pre>
-                            <span class="text-tip-warning">注：使用通配符'*'是不好的。不过暂时没法解决这个问题/(ㄒoㄒ)/~~</span>
-        				</p>
-                        <h4>2、字体</h4>
+                        <h6>1.1 输入框</h6>
                         <p>
-                            字体设置为 <strong> "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", sans-serif</strong>，基础字号为<strong>14px</strong>，基础行高 <strong>line-height:1.5</strong>，字体颜色 #333<span class="font-color-tip"></span>。
-                            <ul class="list-unstyled">
-                                <li style='font-family:simsun;'>Helvetica Neue：Helvetica Neue为Helvetica的改善版本</li>
-                                <li style="font-family:Helvetica;">Helvetica：被广泛使用的传奇般的西文字体 Mac</li>
-                                <li style="font-family:Arial;">Arial：Win平台上默认的无衬线西文字体</li>
-                                <li style='font-family:"Microsoft Yahei";'>Microsoft Yahei：微软雅黑，中文字符</li>
-                                <li style='font-family:"Hiragino Sans GB";'>Hiragino Sans GB：冬青黑体 Mac</li>
-                                <li style='font-family:"Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", sans-serif;'>
-
-                                </li>
-                            </ul>
-                            <span class="text-tip-danger">由于英文字体中大多不包含中文，我们可以先进行英文字体的声明，这样不会影响到中文字体的选择，因此优先使用最优秀的英文字体，中文字体声明则紧随其次</span>
-                            <pre class="prettyprint linenums">
-html {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
-  /* 1 */
-  line-height: 1.5;
-  /* 2 */
-  font-size: 14px;
-  color: #333;
-  -ms-text-size-adjust: 100%;
-  /* 3 */
-  -webkit-text-size-adjust: 100%;
-  /* 3 */
-  -webkit-font-smoothing: antialiased;
-}
-                            </pre>
+                            输入框基本样式，大小控制，圆角控制，以及两种颜色状态。
                         </p>
+                        <div class="show-code">
+                            <div class="show-code-result">
+                                <input type="text" class="ys-field ys-field-sm" placeholder="输入框-sm 小">
+                                <br>
+                                <input type="text" class="ys-field" placeholder="输入框-默认">
+                                <br>
+                                <input type="text" class="ys-field ys-field-lg" placeholder="输入框-lg 大">
+                                <br>
+                                <input type="text" class="ys-field ys-field-sm ys-form-br" placeholder="输入框带圆角-sm 小">
+                                <br>
+                                <input type="text" class="ys-field ys-form-br" placeholder="输入框带圆角-默认">
+                                <br>
+                                <input type="text" class="ys-field ys-field-lg ys-form-br" placeholder="输入框带圆角-lg 大">
+                            </div>
+                            <pre class="prettyprint linenums">
+&lt;input type="text" class="ys-field ys-field-sm" placeholder="输入框-sm 小"&gt;
+&lt;br&gt;
+&lt;input type="text" class="ys-field" placeholder="输入框-默认"&gt;
+&lt;br&gt;
+&lt;input type="text" class="ys-field ys-field-lg" placeholder="输入框-lg 大"&gt;
+&lt;br&gt;
+&lt;input type="text" class="ys-field ys-field-sm ys-form-br" placeholder="输入框带圆角-sm 小"&gt;
+&lt;br&gt;
+&lt;input type="text" class="ys-field ys-form-br" placeholder="输入框带圆角-默认"&gt;
+&lt;br&gt;
+&lt;input type="text" class="ys-field ys-field-lg ys-form-br" placeholder="输入框带圆角-lg 大"&gt;
+&lt;br&gt;                                
+                            </pre>
+                        </div>
+                        <h6>1.2 选择框</h6>
+                        <p>
+                            因为select下拉框美化十分繁琐，固保留了select原有样式。
+                        </p>
+                        <div class="show-code">
+                            <div class="show-code-result">
+                                <select class="ys-field ys-field-sm">
+                                    <option>option</option>
+                                    <option>option</option>
+                                    <option>option</option>
+                                    <option>option</option>
+                                    <option>option</option>
+                                </select>
+                                <br>
+                                <select class="ys-field">
+                                    <option>选项</option>
+                                    <option>选项</option>
+                                    <option>选项</option>
+                                    <option>选项</option>
+                                    <option>选项</option>
+                                </select>
+                                <br>
+                                <select class="ys-field ys-field-lg">
+                                    <option>选项</option>
+                                    <option>选项</option>
+                                    <option>选项</option>
+                                    <option>选项</option>
+                                    <option>选项</option>
+                                </select>
+                            </div>
+                            <pre class="prettyprint linenums">
+
+                            </pre>
+                        </div>
         			</div>
         		</div>
         	</div>
