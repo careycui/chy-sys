@@ -10,8 +10,8 @@
 	display: block;
 	width: 100%;
 	height: $form-h;
-  	line-height: $form-h;
-	padding: 4px 8px;
+  	line-height: ($form-h - 2);
+	padding: 4px 10px;
 	border: 1px solid $input-bcolor;
 	vertical-align: middle;
 	background-color: #fff;
@@ -32,17 +32,47 @@
 // sm 小
 .ys-field-sm {
 	height: $form-h-sm;
-  	line-height: $form-h-sm;
+  	line-height: ($form-h-sm - 2);
 	font-size: 12px;
 }
 // lg 大
 .ys-field-lg {
 	height: $form-h-lg;
-  	line-height: $form-h-lg;
+  	line-height: ($form-h-lg - 2);
 	font-size: 18px;
 }
 
 // 添加圆角
-.ys-form-br{
+.ys-field-br{
 	@include border-radius(5px);
+}
+.ys-field-br-lg{
+	@include border-radius($form-h/2);
+
+	&.ys-field-sm{
+		@include border-radius($form-h-sm/2);
+	}
+
+	&.ys-field-lg{
+		@include border-radius($form-h-lg/2);
+	}
+}
+
+// 选择框
+.ys-checkbox{
+	position: relative;
+	height: $form-h;
+	line-height: $form-h;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-left: 20px;
+	vertical-align: middle;
+
+	@include clearfix();
+
+	& input[type="checkbox"]{
+		float: left;
+		margin-left: -20px;
+		margin-top: 9px;
+	}
 }
