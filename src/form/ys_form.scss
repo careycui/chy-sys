@@ -9,9 +9,10 @@
 .ys-field{
 	display: block;
 	width: 100%;
+	height: $form-h;
+  	line-height: $form-h;
 	padding: 4px 8px;
 	border: 1px solid $input-bcolor;
-	line-height: 1.5;
 	vertical-align: middle;
 	background-color: #fff;
 	background-image: url(about:blank);
@@ -30,11 +31,14 @@
 // 控制大小
 // sm 小
 .ys-field-sm {
-	padding: 3px 8px;
+	height: $form-h-sm;
+  	line-height: $form-h-sm;
 	font-size: 12px;
 }
 // lg 大
 .ys-field-lg {
+	height: $form-h-lg;
+  	line-height: $form-h-lg;
 	font-size: 18px;
 }
 

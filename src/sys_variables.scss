@@ -1,7 +1,7 @@
 
 @charset "UTF-8";
 
-$font-family:  "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", sans-serif !default;
+$font-family:"Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", sans-serif !default;
 $font-size: 14px !default;
 $font-color: #333 !default;
 $lh: 1.5;
@@ -69,3 +69,7 @@ $nav-dark-bgcolor: #525252 !default;
 //form表单
 $input-bcolor: #e4e4e4 !default;
 $input-bcolor-focus: #3bb4f2 !default;
+
+$form-h-sm: 26px !default;
+$form-h: 30px !default;
+$form-h-lg: 36px !default;

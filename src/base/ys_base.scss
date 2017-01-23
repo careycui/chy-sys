@@ -1,20 +1,25 @@
 @charset "utf-8";
 /**
- * 基本btn样式
+ * 基本样式
  */
 @import "compass/css3";
 @import "../sys_variables";
 @import "../sys_mixins";
 
 // 基本字体样式
-html {
+html,body{
+  margin: 0;
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-font-smoothing: antialiased;
+}
+body {
   font-family: $font-family; /* 1 */
   line-height: $lh; /* 2 */
   font-size: $font-size;
   color: $font-color;
-  -ms-text-size-adjust: 100%; /* 3 */
-  -webkit-text-size-adjust: 100%; /* 3 */
-  -webkit-font-smoothing: antialiased;
 }
 //标题 h1 ~ h6样式
 h1, h2, h3, h4, h5, h6 {
@@ -73,7 +78,6 @@ ul, ol {
 	display: inline-block;
 	padding: 0 5px;
 }
-
 //table 
 table {
 	max-width: 100%;
