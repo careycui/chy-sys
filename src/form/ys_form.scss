@@ -27,6 +27,15 @@
 	    @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075),0 0 5px rgba(59,180,242,.3));
 	}
 
+	&.ys-field-inline{
+		display: inline-block;
+		width: auto;
+		min-width: 150px;
+	}
+}
+
+textarea.ys-field{
+	min-height: 50px;
 }
 // 控制大小
 // sm 小
@@ -59,20 +68,92 @@
 }
 
 // 选择框
-.ys-checkbox{
+%common-select{
 	position: relative;
-	height: $form-h;
-	line-height: $form-h;
+	height: max($form-h - 10, 20px);
+	line-height: max($form-h - 10, 20px);
 	margin-top: 5px;
 	margin-bottom: 5px;
 	padding-left: 20px;
 	vertical-align: middle;
+}
+.ys-checkbox{
+	@extend %common-select;
 
 	@include clearfix();
 
+	& label{
+		cursor: pointer;
+	}
 	& input[type="checkbox"]{
 		float: left;
 		margin-left: -20px;
-		margin-top: 9px;
+		margin-top: 4px;
+		cursor: pointer;
+	}
+
+	&.ys-checkbox-inline{
+		display: inline-block;
+		margin-right: 20px; 
+		vertical-align: top;
+	}
+}
+.ys-radio{
+	@extend %common-select;
+
+	& label{
+		cursor: pointer;
+	}
+	& input[type="radio"]{
+		float: left;
+		margin-left: -20px;
+		margin-top: 4px;
+		cursor: pointer;
+	}
+
+	&.ys-radio-inline{
+		display: inline-block;
+		margin-right: 20px;
+		vertical-align: top;
+	}
+}
+//表单组
+.ys-form-group{
+	min-width: 200px;
+	margin-bottom: 20px;
+
+	@include clearfix();
+
+	& label[class*="ys-cell"]{
+		padding-top: 5px;
+		text-align: right;
+		font-weight: 700;
+	}
+}
+.ys-form-horizontal{
+
+	& .ys-form-group{
+		display: inline-block;
+		vertical-align: middle;
+		margin-bottom: 0;
+	}
+
+}
+.ys-form-group-sm{
+	margin-bottom: 15px;
+	font-size: 12px;
+	
+	& .ys-field{
+		height: $form-h-sm;
+	  	line-height: ($form-h-sm - 2);
+	}
+}
+.ys-form-group-lg{
+	margin-bottom: 25px;
+	font-size: 18px;
+	
+	& .ys-field{
+		height: $form-h-lg;
+	  	line-height: ($form-h-lg - 2);
 	}
 }

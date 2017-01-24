@@ -103,7 +103,7 @@ a {
 		color: darken($link-color,20%);
 	}
 }
-
+/* 通用效果CSS */
 // tip text
 .text-tip-warning{
 	color: #f0ad4e;
@@ -119,4 +119,23 @@ a {
 }
 .text-tip-info{
 	color: #19a7f0;
+}
+//重设字号
+.font-12{
+	font-size: 12px;
+}
+// 去除字体加粗
+.font-normal{
+	font-weight: normal !important;
+}
+//字符水平居中控制
+.text-al{
+	text-align: left !important;
+}
+.text-ar{
+	text-align: right !important;
+}
+//宽度重置
+.w150{
+	width: 150px !important;
 }
