@@ -10,7 +10,7 @@
 	display: block;
 	width: 100%;
 	height: $form-h;
-  	line-height: ($form-h - 2);
+  	line-height: ($form-h - 10);
 	padding: 4px 10px;
 	border: 1px solid $input-bcolor;
 	vertical-align: middle;
@@ -41,13 +41,13 @@ textarea.ys-field{
 // sm 小
 .ys-field-sm {
 	height: $form-h-sm;
-  	line-height: ($form-h-sm - 2);
+  	line-height: ($form-h-sm - 10);
 	font-size: 12px;
 }
 // lg 大
 .ys-field-lg {
 	height: $form-h-lg;
-  	line-height: ($form-h-lg - 2);
+  	line-height: ($form-h-lg - 10);
 	font-size: 18px;
 }
 
@@ -145,7 +145,7 @@ textarea.ys-field{
 	
 	& .ys-field{
 		height: $form-h-sm;
-	  	line-height: ($form-h-sm - 2);
+	  	line-height: ($form-h-sm - 10);
 	}
 }
 .ys-form-group-lg{
@@ -154,6 +154,43 @@ textarea.ys-field{
 	
 	& .ys-field{
 		height: $form-h-lg;
-	  	line-height: ($form-h-lg - 2);
+	  	line-height: ($form-h-lg - 10);
+	}
+}
+
+//表单状态
+%disabled{
+	cursor: not-allowed;
+	background-color: lighten($input-bcolor,5%);
+}
+.ys-field.disabled{
+	@extend %disabled;
+}
+.ys-checkbox.disabled,.ys-radio.disabled{
+	& label,& input{
+		cursor: not-allowed;
+	}
+}
+.ys-form-group{
+
+	&.disabled {
+		.ys-field{
+			@extend %disabled;
+		}
+		.ys-checkbox,.ys-radio{
+			& label,& input{
+				cursor: not-allowed;
+			}
+		}
+	}
+}
+.disabled {
+	.ys-field{
+		@extend %disabled;
+	}
+	.ys-checkbox,.ys-radio{
+		& label,& input{
+			cursor: not-allowed;
+		}
 	}
 }

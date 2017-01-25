@@ -851,25 +851,207 @@
                             </pre>
                         </div>
                         <h4>4、表单状态</h4>
+                        <h6>4.1 禁用状态</h6>
+                        <p>
+                            输入域禁用状态，添加<strong>.disabled</strong>类并添加<strong>disabled="disabled"</strong>属性。
+                        </p>
+                        <div class="show-code">
+                            <div class="show-code-result">
+                                <input type="text" class="ys-field disabled" disabled="disabled" placeholder="禁用状态">
+                                <br>
+                                <div class="ys-checkbox disabled">
+                                    <label>
+                                        <input type="checkbox" disabled="disabled">
+                                        选项一
+                                    </label>
+                                </div>
+                                <div class="ys-radio disabled">
+                                    <label>
+                                        <input type="radio" disabled="disabled">
+                                        选项一
+                                    </label>
+                                </div>
+                            </div>
+                            <pre class="prettyprint linenums">
+&lt;input type="text" class="ys-field disabled" disabled="disabled" placeholder="禁用状态"&gt;
+&lt;br&gt;
+&lt;div class="ys-checkbox disabled"&gt;
+    &lt;label&gt;
+        &lt;input type="checkbox" disabled="disabled"&gt;
+        选项一
+    &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="ys-radio disabled"&gt;
+    &lt;label&gt;
+        &lt;input type="radio" disabled="disabled"&gt;
+        选项一
+    &lt;/label&gt;
+&lt;/div&gt;
+                            </pre>
+                        </div>
                         <p>
                             表单组状态，在<strong>ys-form-group</strong>添加状态类。
                         </p>
                         <div class="show-code">
                             <div class="show-code-result">
-                                <div class="ys-form-group">
+                                <div class="ys-form-group disabled">
                                     <label class="ys-cell-2">禁用状态</label>
                                     <div class="ys-cell-10">
-                                        <input type="value" class="ys-field" palceholder="禁用状体" disabled />
+                                        <input type="text" class="ys-field" placeholder="禁用状体" disabled="disabled" />
                                     </div>
                                 </div>
-                                <div class="ys-form-group">
-                                    <label class="ys-cell-2">未通过验证状态</label>
+                                <div class="ys-form-group disabled">
+                                    <label class="ys-cell-2">禁用状态</label>
                                     <div class="ys-cell-10">
-                                        <input type="value" class="ys-field" palceholder="未通过验证状态"/>
+                                        <select class="ys-field" disabled="disabled" >
+                                            <option>选项一</option>
+                                            <option>选项二</option>
+                                            <option>选项三</option>
+                                            <option>选项四</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="ys-form-group disabled">
+                                    <label class="ys-cell-2">禁用状态</label>
+                                    <div class="ys-cell-10">
+                                        <div class="ys-checkbox">
+                                            <label>
+                                                <input type="checkbox" value="1" disabled="disabled">
+                                                选项一
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ys-form-group disabled">
+                                    <label class="ys-cell-2">禁用状态</label>
+                                    <div class="ys-cell-10">
+                                        <div class="ys-radio">
+                                            <label>
+                                                <input type="radio" value="1" disabled="disabled">
+                                                选项一
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ys-form-group disabled">
+                                    <label class="ys-cell-2">禁用状态</label>
+                                    <div class="ys-cell-10">
+                                        <textarea class="ys-field" disabled="disabled" placeholder="禁用状体"></textarea>
                                     </div>
                                 </div>
                             </div>
-                            <pre class="prettyprint linenums"></pre>
+                            <pre class="prettyprint linenums">
+&lt;div class="ys-form-group disabled"&gt;
+    &lt;label class="ys-cell-2"&gt;禁用状态&lt;/label&gt;
+    &lt;div class="ys-cell-10"&gt;
+        &lt;input type="text" class="ys-field" placeholder="禁用状体" disabled="disabled" /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="ys-form-group disabled"&gt;
+    &lt;label class="ys-cell-2"&gt;禁用状态&lt;/label&gt;
+    &lt;div class="ys-cell-10"&gt;
+        &lt;select class="ys-field" disabled="disabled" &gt;
+            &lt;option&gt;选项一&lt;/option&gt;
+            &lt;option&gt;选项二&lt;/option&gt;
+            &lt;option&gt;选项三&lt;/option&gt;
+            &lt;option&gt;选项四&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="ys-form-group disabled"&gt;
+    &lt;label class="ys-cell-2"&gt;禁用状态&lt;/label&gt;
+    &lt;div class="ys-cell-10"&gt;
+        &lt;div class="ys-checkbox"&gt;
+            &lt;label&gt;
+                &lt;input type="checkbox" value="1" disabled="disabled"&gt;
+                选项一
+            &lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="ys-form-group disabled"&gt;
+    &lt;label class="ys-cell-2"&gt;禁用状态&lt;/label&gt;
+    &lt;div class="ys-cell-10"&gt;
+        &lt;div class="ys-radio"&gt;
+            &lt;label&gt;
+                &lt;input type="radio" value="1" disabled="disabled"&gt;
+                选项一
+            &lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="ys-form-group disabled"&gt;
+    &lt;label class="ys-cell-2"&gt;禁用状态&lt;/label&gt;
+    &lt;div class="ys-cell-10"&gt;
+        &lt;textarea class="ys-field" disabled="disabled" placeholder="禁用状体"&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+                            </pre>
+                        </div>
+                        <p>
+                            表单状态。
+                        </p>
+                        <div class="show-code">
+                            <div class="show-code-result">
+                                <form class="ys-form disabled">
+                                    <fieldset disabled>
+                                        <div class="ys-form-group">
+                                            <label class="ys-cell-2">用户名</label>
+                                            <div class="ys-cell-10">
+                                                <input type="text" class="ys-field">
+                                            </div>
+                                        </div>
+                                        <div class="ys-form-group">
+                                            <label class="ys-cell-2">手机号</label>
+                                            <div class="ys-cell-10">
+                                                <input type="text" class="ys-field">
+                                            </div>
+                                        </div>
+                                        <div class="ys-form-group">
+                                            <label class="ys-cell-2">地址</label>
+                                            <div class="ys-cell-10">
+                                                <input type="text" class="ys-field">
+                                            </div>
+                                        </div>
+                                        <div class="ys-form-group">
+                                            <label class="ys-cell-2">密码</label>
+                                            <div class="ys-cell-10">
+                                                <input type="text" class="ys-field">
+                                            </div>
+                                        </div>
+                                        <div class="ys-form-group">
+                                            <label class="ys-cell-2">性别</label>
+                                            <div class="ys-cell-10">
+                                                <div class="ys-radio ys-radio-inline">
+                                                    <label>
+                                                        <input type="radio" value="1" name="sex">
+                                                        单选款 - 选项1
+                                                    </label>
+                                                </div>
+                                                <div class="ys-radio ys-radio-inline">
+                                                    <label>
+                                                        <input type="radio" value="1" name="sex">
+                                                        单选款 - 选项1
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ys-form-group">
+                                            <label class="ys-cell-2">备注</label>
+                                            <div class="ys-cell-10">
+                                                <textarea class="ys-field"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="ys-form-group">
+                                            <div class="ys-cell-2"></div>
+                                            <div class="ys-cell-10">
+                                                <button class="ys-btn ys-color-btn-primary disabled">提交</button>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
                         </div>
         			</div>
         		</div>
