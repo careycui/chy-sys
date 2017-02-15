@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>电商前端</title>
-	<link rel="stylesheet" type="text/css" href="ys/sys.min.css">
+	<link rel="stylesheet" type="text/css" href="../dist/sys.css">
 	<link rel="stylesheet" type="text/css" href="ys/lib/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="asset/css/index/index.css">
 	<link rel="stylesheet" type="text/css" href="asset/css/prettify.css">
@@ -104,7 +104,7 @@
                                         <i class="fa fa-angle-left"></i> 
                                     </a>
                                 </li>
-                                <li class="active">    
+                                <li>    
                                     <a href="image.html">
                                         <i class="fa fa-angle-right"></i>
                                         图片 (Image)
@@ -139,7 +139,7 @@
                                         <i class="fa fa-angle-left"></i> 
                                     </a>
                                 </li>
-                                <li>
+                                <li class="active">
                                     <a href="button_group.html">
                                         <i class="fa fa-angle-right"></i>
                                         按钮组 (Button Group)
@@ -157,26 +157,108 @@
                         </div>
         			</div>
         			<div class="ys-cell-9 right-content">
-        				<h3>图片 <small>Image</small></h3>
+        				<h3>按钮组 <small>Button Group</small></h3>
         				<hr>
+                        <h4>1、分页</h4>
         				<p>
-        					常规图片样式只需要添加<strong>ys-responsive-img</strong>。
+        					一个简单的分页样式，包含悬浮状态、激活状态以及页面跳转输入框。
         				</p>
                         <div class="show-code">
                             <div class="show-code-result">
-                                <div class="img-box">
-                                    <img src="asset/img/example.jpg" class="ys-responsive-img">
+                                <div class="ys-page">
+                                    <button class="ys-btn">上一页</button>
+                                    <button class="ys-btn active">1</button>
+                                    <button class="ys-btn">2</button>
+                                    <button class="ys-btn">3</button>
+                                    <button class="ys-btn">...</button>
+                                    <button class="ys-btn">11</button>
+                                    <button class="ys-btn">12</button>
+                                    <div class="ys-page-nums">
+                                        <input type="text" class="ys-field ys-field-inline" value="1">
+                                        <span>/</span>
+                                        <span>12页</span>
+                                    </div>
+                                    <button class="ys-btn">下一页</button>
                                 </div>
-                                <p>
-                                    img-box 宽 高为 200px 150px，img宽高为 1200px*460px。
-                                </p>
                             </div>
                             <pre class="prettyprint linenums">
-&lt;img src="asset/img/example.jpg" class="ys-responsive-img"&gt;
+&lt;div class="ys-page"&gt;
+    &lt;button class="ys-btn"&gt;上一页&lt;/button&gt;
+    &lt;button class="ys-btn active"&gt;1&lt;/button&gt;
+    &lt;button class="ys-btn"&gt;2&lt;/button&gt;
+    &lt;button class="ys-btn"&gt;3&lt;/button&gt;
+    &lt;button class="ys-btn"&gt;...&lt;/button&gt;
+    &lt;button class="ys-btn"&gt;11&lt;/button&gt;
+    &lt;button class="ys-btn"&gt;12&lt;/button&gt;
+    &lt;div class="ys-page-nums"&gt;
+        &lt;input type="text" class="ys-field ys-field-inline" value="1"&gt;
+        &lt;span&gt;/&lt;/span&gt;
+        &lt;span&gt;12页&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;button class="ys-btn"&gt;下一页&lt;/button&gt;
+&lt;/div&gt;
                             </pre>
                         </div>
-
-
+                        <h4>2、下拉组合按钮</h4>
+                        <p>
+                            按钮悬浮下拉或者点击展开下拉框。可以设置下拉框左(<strong>.ys-dropdown-left</strong>)右(默认)对齐。添加<strong>active</strong>可激活下拉框。
+                        </p>
+                        <div class="show-code">
+                            <div class="show-code-result">
+                                <div class="ys-btn-group">
+                                    <button class="ys-btn">
+                                        悬浮激活
+                                    </button>
+                                    <div class="ys-dropdown" style="width:290px;">
+                                        <ul class="list-unstyled">
+                                            <li>标题</li>
+                                            <li>
+                                                <a href="javascript:;">控制控制控制控制控制控制控制控制控制</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">控制</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">控制</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="ys-btn-group">
+                                    <button class="ys-btn">悬浮激活</button>
+                                    <div class="ys-dropdown ys-dropdown-left">
+                                        <img src="asset/img/qrcode.png" height="233" width="174">
+                                    </div>
+                                </div>
+                            </div>
+                            <pre class="prettyprint linenums">
+&lt;div class="ys-btn-group"&gt;
+    &lt;button class="ys-btn"&gt;
+        悬浮激活
+    &lt;/button&gt;
+    &lt;div class="ys-dropdown" style="width:290px;"&gt;
+        &lt;ul class="list-unstyled"&gt;
+            &lt;li&gt;标题&lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href="javascript:;"&gt;控制控制控制控制控制控制控制控制控制&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href="javascript:;"&gt;控制&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href="javascript:;"&gt;控制&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="ys-btn-group"&gt;
+    &lt;button class="ys-btn"&gt;悬浮激活&lt;/button&gt;
+    &lt;div class="ys-dropdown ys-dropdown-left"&gt;
+        &lt;img src="asset/img/qrcode.png" height="233" width="174"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                            </pre>
+                        </div>
         			</div>
         		</div>
         	</div>

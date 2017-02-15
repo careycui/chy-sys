@@ -1,7 +1,7 @@
 
 @charset "UTF-8";
 
-$font-family:"Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", sans-serif !default;
+$font-family:"Helvetica Neue", Helvetica, Arial, "Microsoft Yahei","\\5FAE\\8F6F\\96C5\\9ED1", "Hiragino Sans GB", sans-serif !default;
 $font-size: 14px !default;
 $font-color: #333 !default;
 $lh: 1.5;
@@ -34,7 +34,7 @@ $media-tablet: 480px !default;
 $btn-radius: 2px !default;
 $btn-color: transparent !default;
 $btn-height: 32px !default;
-$btn-min-width: 64px !default;
+$btn-min-width: 32px !default;
 $btn-bdcolor: #dbdbdb !default;
 
 //link btn 变量

@@ -41,6 +41,7 @@
     border: 1px solid #dfe2f1;
 }
 .show-code .show-code-result{
+    position: relative;
     padding: 10px 20px 0;
 }
 .show-code pre.prettyprint{

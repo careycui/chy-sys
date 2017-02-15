@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>电商前端</title>
-	<link rel="stylesheet" type="text/css" href="ys/sys.min.css">
+	<link rel="stylesheet" type="text/css" href="../dist/sys.css">
 	<link rel="stylesheet" type="text/css" href="ys/lib/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="asset/css/index/index.css">
 	<link rel="stylesheet" type="text/css" href="asset/css/prettify.css">
@@ -104,7 +104,7 @@
                                         <i class="fa fa-angle-left"></i> 
                                     </a>
                                 </li>
-                                <li class="active">    
+                                <li>    
                                     <a href="image.html">
                                         <i class="fa fa-angle-right"></i>
                                         图片 (Image)
@@ -146,7 +146,7 @@
                                         <i class="fa fa-angle-left"></i> 
                                     </a>
                                 </li>
-                                <li>
+                                <li class="active">
                                     <a href="dialog.html">
                                         <i class="fa fa-angle-right"></i>
                                         弹窗 (Dialog)
@@ -157,25 +157,29 @@
                         </div>
         			</div>
         			<div class="ys-cell-9 right-content">
-        				<h3>图片 <small>Image</small></h3>
+        				<h3>弹窗 <small>Dialog</small></h3>
         				<hr>
+                        <h4>1、弹窗基本样式</h4>
         				<p>
-        					常规图片样式只需要添加<strong>ys-responsive-img</strong>。
+        					
         				</p>
                         <div class="show-code">
-                            <div class="show-code-result">
-                                <div class="img-box">
-                                    <img src="asset/img/example.jpg" class="ys-responsive-img">
+                            <div class="show-code-result" style="height:600px;">
+                                <div class="ys-dialog" style="position:absolute;">
+                                    <div class="ys-backdrop-mask"></div>
+                                    <div class="ys-dialog-container">
+                                        <div class="ys-dialog-container-in">
+                                            <div class="ys-dialog-content" style="width:400px;height:200px;padding:10px 20px;">
+                                                <h4 style="margin-bottom: 0px;">弹窗标题</h4>
+                                                <hr>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <p>
-                                    img-box 宽 高为 200px 150px，img宽高为 1200px*460px。
-                                </p>
                             </div>
                             <pre class="prettyprint linenums">
-&lt;img src="asset/img/example.jpg" class="ys-responsive-img"&gt;
                             </pre>
                         </div>
-
 
         			</div>
         		</div>

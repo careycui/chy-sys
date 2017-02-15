@@ -12,7 +12,7 @@
 }
 /////////////////////// Base Button //////////////////////
 .ys-btn{
-	display: inline;
+	display: inline-block;
 	border: none;
 	background-color: $btn-color;
 	outline: none;
@@ -23,6 +23,7 @@
 	min-width: $btn-min-width;
 	padding: 0 15px;
 	vertical-align: middle;
+	color: $font-color;
 	@include transition(all .25s);
 	@include border-radius(2px);
 

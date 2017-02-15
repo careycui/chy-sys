@@ -1,0 +1,109 @@
+@charset "utf-8";
+/**
+ * 按钮组样式
+ */
+@import "compass/css3";
+@import "../sys_variables";
+@import "../sys_mixins";
+
+.ys-page{
+	@include clearfix();
+
+	& .ys-btn{
+		position: relative;
+		height: 23px;
+		padding: 0 5px;
+		line-height: 23px;
+		font-size: 12px;
+		border: 1px solid $btn-bdcolor;
+
+		@include transition(background-color .25s);
+	}
+	
+	& .ys-btn:hover{
+		background-color: #f0f0f0;
+		color: $font-color;
+	}
+
+	& .ys-btn.active{
+		border-color: $btn-lb-color;
+		background-color: lighten($btn-lb-color,40%);
+		color: $font-color;
+	}
+
+	& .ys-page-nums{
+		display: inline-block;
+		height: 23px;
+		line-height: 21px;
+		padding: 0 4px;
+		border: 1px solid $btn-bdcolor;
+		font-size: 12px;
+		vertical-align: middle;
+
+		& .ys-field{
+			width: 30px;
+			min-width: 30px;
+			height: 17px;
+			line-height: 15px;
+			vertical-align: middle;
+			padding: 0 2px;
+		}
+
+		& span{
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+}
+.ys-btn-group{
+	display: inline-block;
+	position: relative;
+
+	& .ys-btn{
+		position: relative;
+		@include transition(color .25s);
+
+		&:after{
+			display: inline-block;
+			position: absolute;
+			left: 0;
+			bottom: -2px;
+			height: 2px;
+			width: 100%;
+			background-color: #fff;
+			z-index: 1;
+		}
+	}
+	&:hover .ys-btn, &.active .ys-btn{
+		border: 1px solid $btn-bdcolor;
+		@include border-radius(2px);
+
+		&:after{
+			content: "";
+		}
+	}
+
+	
+	& .ys-dropdown{
+		display: none;
+		position: absolute;
+		top: 31px;
+		right: 0;
+		padding: 10px 15px;
+		border: 1px solid $btn-bdcolor;
+		background-color: #fff;
+
+		@include border-top-right-radius(2px);
+		@include border-bottom-left-radius(2px);
+		@include border-bottom-right-radius(2px);
+
+		&.ys-dropdown-left{
+			left: 0;
+			right: auto;
+		}
+	}
+
+	&:hover .ys-dropdown, &.active .ys-dropdown{
+		display: block;
+	}
+}
