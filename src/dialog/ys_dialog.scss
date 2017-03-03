@@ -32,9 +32,13 @@
 	& .ys-dialog-container-in{
 		display: table-cell;
 		vertical-align: middle;
+		text-align: center;
 
 		& .ys-dialog-content{
+			display: inline-block;
+			text-align: left;
 			margin: 0 auto;
+			padding: 10px 20px;
 			background-color: #fff;
 			@include border-radius(6px);
 			@include box-shadow(0 5px 10px rgba(0,0,0,.5));

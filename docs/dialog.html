@@ -161,7 +161,7 @@
         				<hr>
                         <h4>1、弹窗基本样式</h4>
         				<p>
-        					
+        					由弹窗内容width height决定弹窗大小。
         				</p>
                         <div class="show-code">
                             <div class="show-code-result" style="height:600px;">
@@ -169,15 +169,36 @@
                                     <div class="ys-backdrop-mask"></div>
                                     <div class="ys-dialog-container">
                                         <div class="ys-dialog-container-in">
-                                            <div class="ys-dialog-content" style="width:400px;height:200px;padding:10px 20px;">
+                                            <div class="ys-dialog-content">
                                                 <h4 style="margin-bottom: 0px;">弹窗标题</h4>
                                                 <hr>
+                                                <div style="height: 200px;width: 400px;">
+                                                </div>
+                                                <div class="footer text-ar">
+                                                    <button class="ys-btn ys-color-btn-primary">确定</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <pre class="prettyprint linenums">
+&lt;div class="ys-dialog" style="position:absolute;"&gt;
+    &lt;div class="ys-backdrop-mask"&gt;&lt;/div&gt;
+    &lt;div class="ys-dialog-container"&gt;
+        &lt;div class="ys-dialog-container-in"&gt;
+            &lt;div class="ys-dialog-content"&gt;
+                &lt;h4 style="margin-bottom: 0px;"&gt;弹窗标题&lt;/h4&gt;
+                &lt;hr&gt;
+                &lt;div style="height: 200px;width: 400px;"&gt;
+                &lt;/div&gt;
+                &lt;div class="footer text-ar"&gt;
+                    &lt;button class="ys-btn ys-color-btn-primary"&gt;确定&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
                             </pre>
                         </div>
 
