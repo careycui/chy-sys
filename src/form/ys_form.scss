@@ -83,6 +83,7 @@ textarea.ys-field{
 	@include clearfix();
 
 	& label{
+		display: inline-block;
 		cursor: pointer;
 	}
 	& input[type="checkbox"]{
@@ -102,6 +103,7 @@ textarea.ys-field{
 	@extend %common-select;
 
 	& label{
+		display: inline-block;
 		cursor: pointer;
 	}
 	& input[type="radio"]{

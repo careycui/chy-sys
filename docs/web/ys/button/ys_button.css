@@ -3,7 +3,7 @@
  * 基本btn样式
  */
 .ys-btn {
-  display: inline;
+  display: inline-block;
   border: none;
   background-color: transparent;
   outline: none;
@@ -11,9 +11,10 @@
   cursor: pointer;
   height: 32px;
   line-height: 32px;
-  min-width: 64px;
+  min-width: 32px;
   padding: 0 15px;
   vertical-align: middle;
+  color: #333;
   -moz-transition: all 0.25s;
   -o-transition: all 0.25s;
   -webkit-transition: all 0.25s;

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>电商前端</title>
-	<link rel="stylesheet" type="text/css" href="ys/sys.min.css">
+	<link rel="stylesheet" type="text/css" href="ys/sys.css">
 	<link rel="stylesheet" type="text/css" href="ys/lib/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="asset/css/index/index.css">
 	<link rel="stylesheet" type="text/css" href="asset/css/prettify.css">
@@ -55,7 +55,7 @@
                                 </span>
                             </div>
                             <ul class="ys-nav-navbar">
-                                <li class="active">
+                                <li>
                                     <a href="index.html">
                                         <i class="fa fa-angle-right"></i>
                                         样式统一 (Normalize)
@@ -146,7 +146,7 @@
                                         <i class="fa fa-angle-left"></i> 
                                     </a>
                                 </li>
-                                <li>
+                                <li class="active">
                                     <a href="dialog.html">
                                         <i class="fa fa-angle-right"></i>
                                         弹窗 (Dialog)
@@ -157,26 +157,51 @@
                         </div>
         			</div>
         			<div class="ys-cell-9 right-content">
-        				<h3>Normalize</h3>
+        				<h3>弹窗 <small>Dialog</small></h3>
         				<hr>
+                        <h4>1、弹窗基本样式</h4>
         				<p>
-        					normalize.css只是一个很小的css文件，为默认的HTML元素样式上提供了跨浏览器的高度一致性。相对于<a href="http://meyerweb.com/eric/tools/css/reset/">reset<i class="fa fa-external-link"></i></a>的简单粗暴，<a href="https://github.com/necolas/normalize.css">normalize.css<i class="fa fa-github"></i></a>则温柔许多。统一样式的同时保留可辨识性。
+        					由弹窗内容width height决定弹窗大小。
         				</p>
-        				<p>
-        					<a href="http://meyerweb.com/eric/tools/css/reset/">reset<i class="fa fa-external-link"></i></a>简单粗暴的通配符：
-        				</p>
-        				<p>
-        					<pre class="prettyprint linenums">
-* {
-	margin: 0;
-	padding: 0;
-	border:0;
-  }
-        					</pre>
-        				</p>
-        				<p>
-        					ysui使用 normalize.css 。
-        				</p>
+                        <div class="show-code">
+                            <div class="show-code-result" style="height:600px;">
+                                <div class="ys-dialog" style="position:absolute;">
+                                    <div class="ys-backdrop-mask"></div>
+                                    <div class="ys-dialog-container">
+                                        <div class="ys-dialog-container-in">
+                                            <div class="ys-dialog-content">
+                                                <h4 style="margin-bottom: 0px;">弹窗标题</h4>
+                                                <hr>
+                                                <div style="height: 200px;width: 400px;">
+                                                </div>
+                                                <div class="footer text-ar">
+                                                    <button class="ys-btn ys-color-btn-primary">确定</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <pre class="prettyprint linenums">
+&lt;div class="ys-dialog" style="position:absolute;"&gt;
+    &lt;div class="ys-backdrop-mask"&gt;&lt;/div&gt;
+    &lt;div class="ys-dialog-container"&gt;
+        &lt;div class="ys-dialog-container-in"&gt;
+            &lt;div class="ys-dialog-content"&gt;
+                &lt;h4 style="margin-bottom: 0px;"&gt;弹窗标题&lt;/h4&gt;
+                &lt;hr&gt;
+                &lt;div style="height: 200px;width: 400px;"&gt;
+                &lt;/div&gt;
+                &lt;div class="footer text-ar"&gt;
+                    &lt;button class="ys-btn ys-color-btn-primary"&gt;确定&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                            </pre>
+                        </div>
+
         			</div>
         		</div>
         	</div>

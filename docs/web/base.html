@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>电商前端</title>
+	<link rel="stylesheet" type="text/css" href="ys/sys.min.css">
+	<link rel="stylesheet" type="text/css" href="ys/lib/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="asset/css/index/index.css">
+	<link rel="stylesheet" type="text/css" href="asset/css/prettify.css">
+	<script type="text/javascript" src="asset/js/common/prettify.js"></script>
+</head>
+<body onload="prettyPrint()">
+	<div class="content">
+        <div class="page-container">
+        	<div class="ys-grid">
+        		<div class="ys-grid-row">
+        			<div class="ys-cell-9 right-content">
+        				<h3>基础设置 <small>Base</small></h3>
+        				<hr>
+                        <h4>1、盒子模型</h4>
+        				<p>
+        					YSUI 将所有元素的盒子模型设为<strong>border-box</strong>。
+        				</p>
+        				<p>
+        					<pre class="prettyprint linenums">
+*,
+*:after,
+*:before {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+        					</pre>
+                            <span class="text-tip-warning">注：使用通配符'*'是不好的。不过暂时没法解决这个问题/(ㄒoㄒ)/~~</span>
+        				</p>
+                        <h4>2、字体</h4>
+                        <p>
+                            字体设置为 <strong> "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", sans-serif</strong>，基础字号为<strong>14px</strong>，基础行高 <strong>line-height:1.5</strong>，字体颜色 #333<span class="font-color-tip"></span>。
+                            <ul class="list-unstyled">
+                                <li style='font-family:simsun;'>Helvetica Neue：Helvetica Neue为Helvetica的改善版本</li>
+                                <li style="font-family:Helvetica;">Helvetica：被广泛使用的传奇般的西文字体 Mac</li>
+                                <li style="font-family:Arial;">Arial：Win平台上默认的无衬线西文字体</li>
+                                <li style='font-family:"Microsoft Yahei";'>Microsoft Yahei：微软雅黑，中文字符</li>
+                                <li style='font-family:"Hiragino Sans GB";'>Hiragino Sans GB：冬青黑体 Mac</li>
+                                <li style='font-family:"Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", sans-serif;'>
+
+                                </li>
+                            </ul>
+                            <span class="text-tip-danger">由于英文字体中大多不包含中文，我们可以先进行英文字体的声明，这样不会影响到中文字体的选择，因此优先使用最优秀的英文字体，中文字体声明则紧随其次</span>
+                            <pre class="prettyprint linenums">
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+  /* 1 */
+  line-height: 1.5;
+  /* 2 */
+  font-size: 14px;
+  color: #333;
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-font-smoothing: antialiased;
+}
+                            </pre>
+                        </p>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+    </div>
+    <script type="text/javascript" src="asset/js/jquery/jquery.js"></script>
+    <script type="text/javascript" src="asset/js/index/index.js"></script>
+</body>
+</html>
