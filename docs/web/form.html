@@ -1,194 +1,34 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>电商前端</title>
-	<!-- <link rel="stylesheet" type="text/css" href="ys/sys.min.css"> -->
-    <link rel="stylesheet" type="text/css" href="../dist/sys.min.css">
-	<link rel="stylesheet" type="text/css" href="ys/lib/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="asset/css/index/index.css">
-	<link rel="stylesheet" type="text/css" href="asset/css/prettify.css">
-	<script type="text/javascript" src="asset/js/common/prettify.js"></script>
-</head>
-<body onload="prettyPrint()">
-	<header class="header">
-		<div class="ys-nav ys-nav-dark ys-nav-horizontal">
-			<div class="ys-nav-brand">
-				<a href="/" class="ys-nav-brand-logo">
-					<img src="https://statics.ys7.com/newmall/b2c/images/index/logo.png">
-				</a>
-				<span class="ys-nav-brand-title">
-					YSUI<em>v1.0</em>
-				</span>
-			</div>
-			<ul class="ys-nav-navbar ys-nav-navbar-left">
-				<li>
-					<a href="">Example</a>
-				</li>
-				<li class="active">
-					<a href="">Tutorials</a>
-				</li>
-				<li>
-					<a href="">Contacts</a>
-				</li>
-			</ul>
-			<ul class="ys-nav-navbar ys-nav-navbar-right">
-				<li>
-					<a href="">Pages</a>
-				</li>
-			</ul>
-		</div>
-	</header>
-	<div class="content">
-        <div class="banner page-banner">
-            <div class="container">
-            	<h1>Tutorials</h1>
-            </div>
-        </div>
-        <div class="page-container">
-        	<div class="ys-grid">
-        		<div class="ys-grid-row">
-        			<div class="ys-cell-3 left-nav">
-        				<div class="ys-nav ys-nav-vertical ys-nav-border ys-nav-radius">
-                            <div class="ys-nav-brand">
-                                <span class="ys-nav-brand-title">
-                                    基本样式
-                                </span>
-                            </div>
-                            <ul class="ys-nav-navbar">
-                                <li>
-                                    <a href="index.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        样式统一 (Normalize)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="base.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        基础设置 (Base)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="typography.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        文字排版 (Typography)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="ys-nav-brand">
-                                <span class="ys-nav-brand-title">
-                                    布局相关
-                                </span>
-                            </div>
-                            <ul class="ys-nav-navbar">
-                                <li>
-                                    <a href="grid.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        网格 (类Bootstrap Grid)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="ys-nav-brand">
-                                <span class="ys-nav-brand-title">
-                                    基本元素
-                                </span>
-                            </div>
-                            <ul class="ys-nav-navbar">
-                                <li>
-                                    <a href="button.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        按钮 (Button)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                                <li>    
-                                    <a href="image.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        图片 (Image)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="table.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        表格 (Table)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                                <li class="active">    
-                                    <a href="base.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        表单 (Form)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="ys-nav-brand">
-                                <span class="ys-nav-brand-title">
-                                    常用组件
-                                </span>
-                            </div>
-                            <ul class="ys-nav-navbar">
-                                <li>
-                                    <a href="nav.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        导航条 (Nav)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="button_group.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        按钮组 (Button Group)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="dialog.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        弹窗 (Dialog)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-        			</div>
-        			<div class="ys-cell-9 right-content">
-        				<h3>表单 <small>Form</small></h3>
-        				<hr>
-                        <h4>1、表单元素</h4>
-        				<p>
-        					YSUI 基本支持大部分Form表单输入元素。
-        				</p>
-                        <h6>1.1 输入框</h6>
-                        <p>
-                            输入框基本样式，大小控制，圆角控制，以及两种颜色状态。
-                        </p>
-                        <div class="show-code">
-                            <div class="show-code-result">
-                                <input type="text" class="ys-field ys-field-sm" placeholder="输入框-sm 小">
-                                <br>
-                                <input type="text" class="ys-field" placeholder="输入框-默认">
-                                <br>
-                                <input type="text" class="ys-field ys-field-lg" placeholder="输入框-lg 大">
-                                <br>
-                                <input type="text" class="ys-field ys-field-sm ys-field-br" placeholder="输入框带圆角-sm 小">
-                                <br>
-                                <input type="text" class="ys-field ys-field-br" placeholder="输入框带圆角-默认">
-                                <br>
-                                <input type="text" class="ys-field ys-field-lg ys-field-br" placeholder="输入框大圆角-lg 大">
-                                <br>
-                                <input type="text" class="ys-field ys-field-sm ys-field-br-lg" placeholder="输入框带大圆角-sm 小">
-                                <br>
-                                <input type="text" class="ys-field ys-field-br-lg" placeholder="输入框大带圆角-默认">
-                                <br>
-                                <input type="text" class="ys-field ys-field-lg ys-field-br-lg" placeholder="输入框大带圆角-lg 大">
-                            </div>
-                            <pre class="prettyprint linenums">
+<h3>表单 <small>Form</small></h3>
+<hr>
+<h4>1、表单元素</h4>
+<p>
+	YSUI 基本支持大部分Form表单输入元素。
+</p>
+<h6>1.1 输入框</h6>
+<p>
+    输入框基本样式，大小控制，圆角控制，以及两种颜色状态。
+</p>
+<div class="show-code">
+    <div class="show-code-result">
+        <input type="text" class="ys-field ys-field-sm" placeholder="输入框-sm 小">
+        <br>
+        <input type="text" class="ys-field" placeholder="输入框-默认">
+        <br>
+        <input type="text" class="ys-field ys-field-lg" placeholder="输入框-lg 大">
+        <br>
+        <input type="text" class="ys-field ys-field-sm ys-field-br" placeholder="输入框带圆角-sm 小">
+        <br>
+        <input type="text" class="ys-field ys-field-br" placeholder="输入框带圆角-默认">
+        <br>
+        <input type="text" class="ys-field ys-field-lg ys-field-br" placeholder="输入框大圆角-lg 大">
+        <br>
+        <input type="text" class="ys-field ys-field-sm ys-field-br-lg" placeholder="输入框带大圆角-sm 小">
+        <br>
+        <input type="text" class="ys-field ys-field-br-lg" placeholder="输入框大带圆角-默认">
+        <br>
+        <input type="text" class="ys-field ys-field-lg ys-field-br-lg" placeholder="输入框大带圆角-lg 大">
+    </div>
+    <pre class="prettyprint linenums">
 &lt;input type="text" class="ys-field ys-field-sm" placeholder="输入框-sm 小"&gt;
 &lt;br&gt;
 &lt;input type="text" class="ys-field" placeholder="输入框-默认"&gt;
@@ -207,39 +47,39 @@
 &lt;input type="text" class="ys-field ys-field-br-lg" placeholder="输入框大带圆角-默认"&gt;
 &lt;br&gt;
 &lt;input type="text" class="ys-field ys-field-lg ys-field-br-lg" placeholder="输入框大带圆角-lg 大"&gt;                              
-                            </pre>
-                        </div>
-                        <h6>1.2 下拉选择框</h6>
-                        <p>
-                            因为select下拉框美化十分繁琐，固保留了select原有样式。
-                        </p>
-                        <div class="show-code">
-                            <div class="show-code-result">
-                                <select class="ys-field ys-field-sm">
-                                    <option>选项一....一</option>
-                                    <option>选项一....一</option>
-                                    <option>选项一....一</option>
-                                    <option>选项一....一</option>
-                                    <option>选项一....一</option>
-                                </select>
-                                <br>
-                                <select class="ys-field">
-                                    <option>选项一....</option>
-                                    <option>选项一....</option>
-                                    <option>选项一....</option>
-                                    <option>选项一....</option>
-                                    <option>选项一....</option>
-                                </select>
-                                <br>
-                                <select class="ys-field ys-field-lg ys-field-br">
-                                    <option>选项一....</option>
-                                    <option>选项一....</option>
-                                    <option>选项一....</option>
-                                    <option>选项一....</option>
-                                    <option>选项一....</option>
-                                </select>
-                            </div>
-                            <pre class="prettyprint linenums">
+    </pre>
+</div>
+<h6>1.2 下拉选择框</h6>
+<p>
+    因为select下拉框美化十分繁琐，固保留了select原有样式。
+</p>
+<div class="show-code">
+    <div class="show-code-result">
+        <select class="ys-field ys-field-sm">
+            <option>选项一....一</option>
+            <option>选项一....一</option>
+            <option>选项一....一</option>
+            <option>选项一....一</option>
+            <option>选项一....一</option>
+        </select>
+        <br>
+        <select class="ys-field">
+            <option>选项一....</option>
+            <option>选项一....</option>
+            <option>选项一....</option>
+            <option>选项一....</option>
+            <option>选项一....</option>
+        </select>
+        <br>
+        <select class="ys-field ys-field-lg ys-field-br">
+            <option>选项一....</option>
+            <option>选项一....</option>
+            <option>选项一....</option>
+            <option>选项一....</option>
+            <option>选项一....</option>
+        </select>
+    </div>
+    <pre class="prettyprint linenums">
 &lt;select class="ys-field ys-field-sm"&gt;
     &lt;option&gt;选项一....一&lt;/option&gt;
 &lt;/select&gt;
@@ -251,62 +91,62 @@
 &lt;select class="ys-field ys-field-lg ys-field-br"&gt;
     &lt;option&gt;选项一....&lt;/option&gt;
 &lt;/select&gt;
-                            </pre>
-                        </div>
-                        <h6>1.3 选择框</h6>
-                        <div class="show-code">
-                            <div class="show-code-result">
-                                <div class="ys-checkbox">
-                                    <label>
-                                        <input type="checkbox" value="1">
-                                        复选框 1，选我选我
-                                    </label>
-                                </div>
-                                <div class="ys-radio">
-                                    <label>
-                                        <input type="radio" value="1" name="group">
-                                        单选款 - 选项1
-                                    </label>
-                                </div>
-                                <div class="ys-radio">
-                                    <label>
-                                        <input type="radio" value="1" name="group">
-                                        单选款 - 选项1
-                                    </label>
-                                </div>
-                                <div class="ys-checkbox ys-checkbox-inline">
-                                    <label>
-                                        <input type="checkbox" value="1">
-                                        复选框 1，选我选我
-                                    </label>
-                                </div>
-                                <div class="ys-checkbox ys-checkbox-inline">
-                                    <label>
-                                        <input type="checkbox" value="1">
-                                        复选框 2，选我选我
-                                    </label>
-                                </div>
-                                <div class="ys-checkbox ys-checkbox-inline">
-                                    <label>
-                                        <input type="checkbox" value="1">
-                                        复选框 3，选我选我
-                                    </label>
-                                </div>
-                                <br>
-                                <div class="ys-radio ys-radio-inline">
-                                    <label>
-                                        <input type="radio" value="1" name="group">
-                                        单选款 - 选项1
-                                    </label>
-                                </div>
-                                <div class="ys-radio ys-radio-inline">
-                                    <label>
-                                        <input type="radio" value="1" name="group">
-                                        单选款 - 选项1
-                                    </label>
-                                </div>
-                            </div>
-                            <pre class="prettyprint linenums">
+    </pre>
+</div>
+<h6>1.3 选择框</h6>
+<div class="show-code">
+    <div class="show-code-result">
+        <div class="ys-checkbox">
+            <label>
+                <input type="checkbox" value="1">
+                复选框 1，选我选我
+            </label>
+        </div>
+        <div class="ys-radio">
+            <label>
+                <input type="radio" value="1" name="group">
+                单选款 - 选项1
+            </label>
+        </div>
+        <div class="ys-radio">
+            <label>
+                <input type="radio" value="1" name="group">
+                单选款 - 选项1
+            </label>
+        </div>
+        <div class="ys-checkbox ys-checkbox-inline">
+            <label>
+                <input type="checkbox" value="1">
+                复选框 1，选我选我
+            </label>
+        </div>
+        <div class="ys-checkbox ys-checkbox-inline">
+            <label>
+                <input type="checkbox" value="1">
+                复选框 2，选我选我
+            </label>
+        </div>
+        <div class="ys-checkbox ys-checkbox-inline">
+            <label>
+                <input type="checkbox" value="1">
+                复选框 3，选我选我
+            </label>
+        </div>
+        <br>
+        <div class="ys-radio ys-radio-inline">
+            <label>
+                <input type="radio" value="1" name="group">
+                单选款 - 选项1
+            </label>
+        </div>
+        <div class="ys-radio ys-radio-inline">
+            <label>
+                <input type="radio" value="1" name="group">
+                单选款 - 选项1
+            </label>
+        </div>
+    </div>
+    <pre class="prettyprint linenums">
 &lt;div class="ys-checkbox"&gt;
     &lt;label&gt;
         &lt;input type="checkbox" value="1"&gt;
@@ -356,62 +196,62 @@
         单选款 - 选项1
     &lt;/label&gt;
 &lt;/div&gt;
-                            </pre>
-                        </div>
-                        <h6>1.4 文本域</h6>
-                        <div class="show-code">
-                            <div class="show-code-result">
-                                <textarea class="ys-field">
-                                </textarea>
-                            </div>
-                            <pre class="prettyprint linenums">
+    </pre>
+</div>
+<h6>1.4 文本域</h6>
+<div class="show-code">
+    <div class="show-code-result">
+        <textarea class="ys-field">
+        </textarea>
+    </div>
+    <pre class="prettyprint linenums">
 &lt;textarea class="ys-field"&gt;
 &lt;/textarea&gt;
-                            </pre>
-                        </div>
-                        <h4>2、表单组</h4>
-                        <p>
-                            <strong>label</strong>与输入框为一组，默认同一行显示。与网格结合控制空表单组各元素的宽度。表单组控制最小宽度为<strong>200px</strong>。
-                        </p>
-                        <div class="show-code">
-                            <div class="show-code-result">
-                                <div class="ys-form-group">
-                                    <label class="ys-cell-2">Tile 标签名</label>
-                                    <div class="ys-cell-10">
-                                        <input type="text" class="ys-field">
-                                    </div>
-                                </div>
-                                <div class="ys-form-group ">
-                                    <label class="ys-cell-2">Tile 标签名</label>
-                                    <div class="ys-cell-10">
-                                        <select class="ys-field">
-                                            <option>选项一...</option>
-                                            <option>选项二...</option>
-                                            <option>选项三...</option>
-                                            <option>选项四...</option>
-                                            <option>选项五...</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="ys-form-group">
-                                    <label class="ys-cell-2">单选组</label>
-                                    <div class="ys-cell-10">
-                                        <div class="ys-radio ys-radio-inline">
-                                            <label>
-                                                <input type="radio" value="1" name="sex">
-                                                单选款 - 选项1
-                                            </label>
-                                        </div>
-                                        <div class="ys-radio ys-radio-inline">
-                                            <label>
-                                                <input type="radio" value="1" name="sex">
-                                                单选款 - 选项1
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <pre class="prettyprint linenums">
+    </pre>
+</div>
+<h4>2、表单组</h4>
+<p>
+    <strong>label</strong>与输入框为一组，默认同一行显示。与网格结合控制空表单组各元素的宽度。表单组控制最小宽度为<strong>200px</strong>。
+</p>
+<div class="show-code">
+    <div class="show-code-result">
+        <div class="ys-form-group">
+            <label class="ys-cell-2">Tile 标签名</label>
+            <div class="ys-cell-10">
+                <input type="text" class="ys-field">
+            </div>
+        </div>
+        <div class="ys-form-group ">
+            <label class="ys-cell-2">Tile 标签名</label>
+            <div class="ys-cell-10">
+                <select class="ys-field">
+                    <option>选项一...</option>
+                    <option>选项二...</option>
+                    <option>选项三...</option>
+                    <option>选项四...</option>
+                    <option>选项五...</option>
+                </select>
+            </div>
+        </div>
+        <div class="ys-form-group">
+            <label class="ys-cell-2">单选组</label>
+            <div class="ys-cell-10">
+                <div class="ys-radio ys-radio-inline">
+                    <label>
+                        <input type="radio" value="1" name="sex">
+                        单选款 - 选项1
+                    </label>
+                </div>
+                <div class="ys-radio ys-radio-inline">
+                    <label>
+                        <input type="radio" value="1" name="sex">
+                        单选款 - 选项1
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <pre class="prettyprint linenums">
 &lt;div class="ys-form-group"&gt;
     &lt;label class="ys-cell-2"&gt;Tile 标签名&lt;/label&gt;
     &lt;div class="ys-cell-10"&gt;
@@ -449,27 +289,27 @@
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
-                            </pre>
-                        </div>
-                        <p>
-                            表单组label字体默认<strong>加粗</strong>，可添加<strong>ys-font-normall</strong>去除加粗效果。
-                        </p>
-                        <div class="show-code">
-                            <div class="show-code-result">
-                                <div class="ys-form-group">
-                                    <label class="ys-cell-2">默认加粗效果</label>
-                                    <div class="ys-cell-10">
-                                        <input type="text" class="ys-field">
-                                    </div>
-                                </div>
-                                <div class="ys-form-group">
-                                    <label class="ys-cell-2 font-normal">默认加粗效果</label>
-                                    <div class="ys-cell-10">
-                                        <input type="text" class="ys-field">
-                                    </div>
-                                </div>
-                            </div>
-                            <pre class="prettyprint linenums">
+    </pre>
+</div>
+<p>
+    表单组label字体默认<strong>加粗</strong>，可添加<strong>ys-font-normall</strong>去除加粗效果。
+</p>
+<div class="show-code">
+    <div class="show-code-result">
+        <div class="ys-form-group">
+            <label class="ys-cell-2">默认加粗效果</label>
+            <div class="ys-cell-10">
+                <input type="text" class="ys-field">
+            </div>
+        </div>
+        <div class="ys-form-group">
+            <label class="ys-cell-2 font-normal">默认加粗效果</label>
+            <div class="ys-cell-10">
+                <input type="text" class="ys-field">
+            </div>
+        </div>
+    </div>
+    <pre class="prettyprint linenums">
 &lt;div class="ys-form-group"&gt;
     &lt;label class="ys-cell-2"&gt;默认加粗效果&lt;/label&gt;
     &lt;div class="ys-cell-10"&gt;
@@ -482,102 +322,102 @@
         &lt;input type="text" class="ys-field"&gt;
     &lt;/div&gt;
 &lt;/div&gt;
-                            </pre>
-                        </div>
-                        <p>
-                            通过添加<strong>ys-form-group-sm/ys-form-group-lg</strong>控制表单组大小。
-                        </p>
-                        <div class="show-code">
-                            <div class="show-code-result">
-                                <div class="ys-form-group ys-form-group-sm">
-                                    <label class="ys-cell-2">小号表单组</label>
-                                    <div class="ys-cell-10">
-                                        <input type="text" class="ys-field">
-                                    </div>
-                                </div>
-                                <div class="show-code-result">
-                                    <div class="ys-form-group ys-form-group">
-                                        <label class="ys-cell-2">默认表单组</label>
-                                        <div class="ys-cell-10">
-                                            <input type="text" class="ys-field">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="show-code-result">
-                                    <div class="ys-form-group ys-form-group-lg">
-                                        <label class="ys-cell-2">大号表单组</label>
-                                        <div class="ys-cell-10">
-                                            <input type="text" class="ys-field">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <pre>
-                            </pre>
-                        </div>
-                        <h4>3、表单</h4>
-                        <p>
-                            表单组默认垂直排列。
-                        </p>
-                        <div class="show-code">
-                            <div class="show-code-result">
-                                <form>
-                                    <div class="ys-form-group">
-                                        <label class="ys-cell-2">用户名</label>
-                                        <div class="ys-cell-10">
-                                            <input type="text" class="ys-field">
-                                        </div>
-                                    </div>
-                                    <div class="ys-form-group">
-                                        <label class="ys-cell-2">手机号</label>
-                                        <div class="ys-cell-10">
-                                            <input type="text" class="ys-field">
-                                        </div>
-                                    </div>
-                                    <div class="ys-form-group">
-                                        <label class="ys-cell-2">地址</label>
-                                        <div class="ys-cell-10">
-                                            <input type="text" class="ys-field">
-                                        </div>
-                                    </div>
-                                    <div class="ys-form-group">
-                                        <label class="ys-cell-2">密码</label>
-                                        <div class="ys-cell-10">
-                                            <input type="text" class="ys-field">
-                                        </div>
-                                    </div>
-                                    <div class="ys-form-group">
-                                        <label class="ys-cell-2">性别</label>
-                                        <div class="ys-cell-10">
-                                            <div class="ys-radio ys-radio-inline">
-                                                <label>
-                                                    <input type="radio" value="1" name="sex">
-                                                    单选款 - 选项1
-                                                </label>
-                                            </div>
-                                            <div class="ys-radio ys-radio-inline">
-                                                <label>
-                                                    <input type="radio" value="1" name="sex">
-                                                    单选款 - 选项1
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="ys-form-group">
-                                        <label class="ys-cell-2">备注</label>
-                                        <div class="ys-cell-10">
-                                            <textarea class="ys-field"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="ys-form-group">
-                                        <div class="ys-cell-2"></div>
-                                        <div class="ys-cell-10">
-                                            <button class="ys-btn ys-color-btn-primary">提交</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <pre class="prettyprint linenums">
+    </pre>
+</div>
+<p>
+    通过添加<strong>ys-form-group-sm/ys-form-group-lg</strong>控制表单组大小。
+</p>
+<div class="show-code">
+    <div class="show-code-result">
+        <div class="ys-form-group ys-form-group-sm">
+            <label class="ys-cell-2">小号表单组</label>
+            <div class="ys-cell-10">
+                <input type="text" class="ys-field">
+            </div>
+        </div>
+        <div class="show-code-result">
+            <div class="ys-form-group ys-form-group">
+                <label class="ys-cell-2">默认表单组</label>
+                <div class="ys-cell-10">
+                    <input type="text" class="ys-field">
+                </div>
+            </div>
+        </div>
+        <div class="show-code-result">
+            <div class="ys-form-group ys-form-group-lg">
+                <label class="ys-cell-2">大号表单组</label>
+                <div class="ys-cell-10">
+                    <input type="text" class="ys-field">
+                </div>
+            </div>
+        </div>
+    </div>
+    <pre>
+    </pre>
+</div>
+<h4>3、表单</h4>
+<p>
+    表单组默认垂直排列。
+</p>
+<div class="show-code">
+    <div class="show-code-result">
+        <form>
+            <div class="ys-form-group">
+                <label class="ys-cell-2">用户名</label>
+                <div class="ys-cell-10">
+                    <input type="text" class="ys-field">
+                </div>
+            </div>
+            <div class="ys-form-group">
+                <label class="ys-cell-2">手机号</label>
+                <div class="ys-cell-10">
+                    <input type="text" class="ys-field">
+                </div>
+            </div>
+            <div class="ys-form-group">
+                <label class="ys-cell-2">地址</label>
+                <div class="ys-cell-10">
+                    <input type="text" class="ys-field">
+                </div>
+            </div>
+            <div class="ys-form-group">
+                <label class="ys-cell-2">密码</label>
+                <div class="ys-cell-10">
+                    <input type="text" class="ys-field">
+                </div>
+            </div>
+            <div class="ys-form-group">
+                <label class="ys-cell-2">性别</label>
+                <div class="ys-cell-10">
+                    <div class="ys-radio ys-radio-inline">
+                        <label>
+                            <input type="radio" value="1" name="sex">
+                            单选款 - 选项1
+                        </label>
+                    </div>
+                    <div class="ys-radio ys-radio-inline">
+                        <label>
+                            <input type="radio" value="1" name="sex">
+                            单选款 - 选项1
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="ys-form-group">
+                <label class="ys-cell-2">备注</label>
+                <div class="ys-cell-10">
+                    <textarea class="ys-field"></textarea>
+                </div>
+            </div>
+            <div class="ys-form-group">
+                <div class="ys-cell-2"></div>
+                <div class="ys-cell-10">
+                    <button class="ys-btn ys-color-btn-primary">提交</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <pre class="prettyprint linenums">
 &lt;form&gt;
     &lt;div class="ys-form-group"&gt;
         &lt;label class="ys-cell-2"&gt;用户名&lt;/label&gt;
@@ -633,26 +473,26 @@
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/form&gt;
-                            </pre>
-                        </div>
-                        <p>
-                            添加<strong>ys-form-horizontal</strong>使form表单水平排列。水平排列请注意表单宽度。
-                        </p>
-                        <div class="show-code">
-                            <div class="show-code-result">
-                                <form class="ys-form-horizontal">
-                                    <div class="ys-form-group">
-                                        <input type="text" class="ys-field" placeholder="用户名">
-                                    </div>
-                                    <div class="ys-form-group">
-                                        <input type="text" class="ys-field" placeholder="密码">
-                                    </div>
-                                    <div class="ys-form-group">
-                                        <button class="ys-btn ys-color-btn-primary ys-btn-sm">提交</button>
-                                    </div>
-                                </form>
-                            </div>
-                            <pre class="prettyprint linenums">
+    </pre>
+</div>
+<p>
+    添加<strong>ys-form-horizontal</strong>使form表单水平排列。水平排列请注意表单宽度。
+</p>
+<div class="show-code">
+    <div class="show-code-result">
+        <form class="ys-form-horizontal">
+            <div class="ys-form-group">
+                <input type="text" class="ys-field" placeholder="用户名">
+            </div>
+            <div class="ys-form-group">
+                <input type="text" class="ys-field" placeholder="密码">
+            </div>
+            <div class="ys-form-group">
+                <button class="ys-btn ys-color-btn-primary ys-btn-sm">提交</button>
+            </div>
+        </form>
+    </div>
+    <pre class="prettyprint linenums">
 &lt;form class="ys-form-horizontal"&gt;
     &lt;div class="ys-form-group"&gt;
         &lt;input type="text" class="ys-field" placeholder="用户名"&gt;
@@ -664,99 +504,99 @@
         &lt;button class="ys-btn ys-color-btn-primary ys-btn-sm"&gt;提交&lt;/button&gt;
     &lt;/div&gt;
 &lt;/form&gt;
-                            </pre>
+    </pre>
+</div>
+<p>
+    商城后台优惠券领取实例。
+</p>
+<div class="show-code">
+    <div class="show-code-result">
+        <h4>优惠券领取</h4>
+        <hr />
+        <form class="ys-form font-12">
+            <div class="ys-form-group ys-form-group-sm">
+                <label class="ys-cell-2 font-normal text-al">优惠券</label>
+                <div class="ys-cell-10">
+                    <button class="ys-btn ys-btn-sm ys-link-btn">请选择优惠券</button>
+                </div>
+            </div>
+            <div class="ys-form-group ys-form-group-sm">
+                <label class="ys-cell-2 font-normal text-al">领取时间</label>
+                <div class="ys-cell-10">
+                    <input type="text" class="ys-field ys-field-inline" placeholder="开始时间">
+                    <input type="text" class="ys-field ys-field-inline" placeholder="结束时间">
+                </div>
+            </div>
+            <div class="ys-form-group ys-form-group-sm">
+                <label class="ys-cell-2 font-normal text-al">领取数量</label>
+                <div class="ys-cell-10">
+                    <input type="number" class="ys-field ys-field-inline w150">
+                     张
+                </div>
+            </div>
+            <div class="ys-form-group ys-form-group-sm">
+                <label class="ys-cell-2 font-normal text-al">每人限领张数</label>
+                <div class="ys-cell-10">
+                    <input type="number" class="ys-field ys-field-inline w150">
+                     张
+                </div>
+            </div>
+            <div class="ys-form-group ys-form-group-sm">
+                <label class="ys-cell-2 font-normal text-al">有效期规则</label>
+                <div class="ys-cell-10">
+                    <div class="ys-cell">
+                        <div class="ys-radio ys-radio-inline">
+                            <label>
+                                <input type="radio" name="group">
+                                领取后
+                            </label>
                         </div>
-                        <p>
-                            商城后台优惠券领取实例。
-                        </p>
-                        <div class="show-code">
-                            <div class="show-code-result">
-                                <h4>优惠券领取</h4>
-                                <hr />
-                                <form class="ys-form font-12">
-                                    <div class="ys-form-group ys-form-group-sm">
-                                        <label class="ys-cell-2 font-normal text-al">优惠券</label>
-                                        <div class="ys-cell-10">
-                                            <button class="ys-btn ys-btn-sm ys-link-btn">请选择优惠券</button>
-                                        </div>
-                                    </div>
-                                    <div class="ys-form-group ys-form-group-sm">
-                                        <label class="ys-cell-2 font-normal text-al">领取时间</label>
-                                        <div class="ys-cell-10">
-                                            <input type="text" class="ys-field ys-field-inline" placeholder="开始时间">
-                                            <input type="text" class="ys-field ys-field-inline" placeholder="结束时间">
-                                        </div>
-                                    </div>
-                                    <div class="ys-form-group ys-form-group-sm">
-                                        <label class="ys-cell-2 font-normal text-al">领取数量</label>
-                                        <div class="ys-cell-10">
-                                            <input type="number" class="ys-field ys-field-inline w150">
-                                             张
-                                        </div>
-                                    </div>
-                                    <div class="ys-form-group ys-form-group-sm">
-                                        <label class="ys-cell-2 font-normal text-al">每人限领张数</label>
-                                        <div class="ys-cell-10">
-                                            <input type="number" class="ys-field ys-field-inline w150">
-                                             张
-                                        </div>
-                                    </div>
-                                    <div class="ys-form-group ys-form-group-sm">
-                                        <label class="ys-cell-2 font-normal text-al">有效期规则</label>
-                                        <div class="ys-cell-10">
-                                            <div class="ys-cell">
-                                                <div class="ys-radio ys-radio-inline">
-                                                    <label>
-                                                        <input type="radio" name="group">
-                                                        领取后
-                                                    </label>
-                                                </div>
-                                                <input type="number" class="ys-field ys-field-inline">
-                                                天内有效
-                                            </div>
-                                            <div class="ys-cell">
-                                                <div class="ys-radio ys-radio-inline">
-                                                    <label>
-                                                        <input type="radio" name="group">
-                                                        沿用优惠券有效期
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="ys-cell">
-                                                <div class="ys-radio ys-radio-inline">
-                                                    <label>
-                                                        <input type="radio" name="group">
-                                                        指定日期
-                                                    </label>
-                                                </div>
-                                                <input type="text" class="ys-field ys-field-inline">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="ys-form-group ys-form-group-sm">
-                                        <label class="ys-cell-2 font-normal text-al">领取状态</label>
-                                        <div class="ys-cell-10">
-                                            <div class="ys-radio ys-radio-inline">
-                                                <label>
-                                                    <input type="radio" name="group1">
-                                                    开启
-                                                </label>
-                                            </div>
-                                            <div class="ys-radio ys-radio-inline">
-                                                <label>
-                                                    <input type="radio" name="group1">
-                                                    关闭
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <hr />
-                                    <div class="ys-form-group">
-                                        <button class="ys-btn ys-btn-lg ys-color-btn-primary">提交</button>
-                                    </div>
-                                </form>
-                            </div>
-                            <pre class="prettyprint linenums">
+                        <input type="number" class="ys-field ys-field-inline">
+                        天内有效
+                    </div>
+                    <div class="ys-cell">
+                        <div class="ys-radio ys-radio-inline">
+                            <label>
+                                <input type="radio" name="group">
+                                沿用优惠券有效期
+                            </label>
+                        </div>
+                    </div>
+                    <div class="ys-cell">
+                        <div class="ys-radio ys-radio-inline">
+                            <label>
+                                <input type="radio" name="group">
+                                指定日期
+                            </label>
+                        </div>
+                        <input type="text" class="ys-field ys-field-inline">
+                    </div>
+                </div>
+            </div>
+            <div class="ys-form-group ys-form-group-sm">
+                <label class="ys-cell-2 font-normal text-al">领取状态</label>
+                <div class="ys-cell-10">
+                    <div class="ys-radio ys-radio-inline">
+                        <label>
+                            <input type="radio" name="group1">
+                            开启
+                        </label>
+                    </div>
+                    <div class="ys-radio ys-radio-inline">
+                        <label>
+                            <input type="radio" name="group1">
+                            关闭
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="ys-form-group">
+                <button class="ys-btn ys-btn-lg ys-color-btn-primary">提交</button>
+            </div>
+        </form>
+    </div>
+    <pre class="prettyprint linenums">
 &lt;h4>优惠券领取&lt;/h4&gt;
 &lt;hr /&gt;
 &lt;form class="ys-form font-12"&gt;
@@ -841,31 +681,31 @@
         &lt;button class="ys-btn ys-btn-lg ys-color-btn-primary"&gt;提交&lt;/button&gt;
     &lt;/div&gt;
 &lt;/form&gt;
-                            </pre>
-                        </div>
-                        <h4>4、表单状态</h4>
-                        <h6>4.1 禁用状态</h6>
-                        <p>
-                            输入域禁用状态，添加<strong>.disabled</strong>类并添加<strong>disabled="disabled"</strong>属性。
-                        </p>
-                        <div class="show-code">
-                            <div class="show-code-result">
-                                <input type="text" class="ys-field disabled" disabled="disabled" placeholder="禁用状态">
-                                <br>
-                                <div class="ys-checkbox disabled">
-                                    <label>
-                                        <input type="checkbox" disabled="disabled">
-                                        选项一
-                                    </label>
-                                </div>
-                                <div class="ys-radio disabled">
-                                    <label>
-                                        <input type="radio" disabled="disabled">
-                                        选项一
-                                    </label>
-                                </div>
-                            </div>
-                            <pre class="prettyprint linenums">
+    </pre>
+</div>
+<h4>4、表单状态</h4>
+<h6>4.1 禁用状态</h6>
+<p>
+    输入域禁用状态，添加<strong>.disabled</strong>类并添加<strong>disabled="disabled"</strong>属性。
+</p>
+<div class="show-code">
+    <div class="show-code-result">
+        <input type="text" class="ys-field disabled" disabled="disabled" placeholder="禁用状态">
+        <br>
+        <div class="ys-checkbox disabled">
+            <label>
+                <input type="checkbox" disabled="disabled">
+                选项一
+            </label>
+        </div>
+        <div class="ys-radio disabled">
+            <label>
+                <input type="radio" disabled="disabled">
+                选项一
+            </label>
+        </div>
+    </div>
+    <pre class="prettyprint linenums">          
 &lt;input type="text" class="ys-field disabled" disabled="disabled" placeholder="禁用状态"&gt;
 &lt;br&gt;
 &lt;div class="ys-checkbox disabled"&gt;
@@ -880,60 +720,60 @@
         选项一
     &lt;/label&gt;
 &lt;/div&gt;
-                            </pre>
-                        </div>
-                        <p>
-                            表单组状态，在<strong>ys-form-group</strong>添加状态类。
-                        </p>
-                        <div class="show-code">
-                            <div class="show-code-result">
-                                <div class="ys-form-group disabled">
-                                    <label class="ys-cell-2">禁用状态</label>
-                                    <div class="ys-cell-10">
-                                        <input type="text" class="ys-field" placeholder="禁用状体" disabled="disabled" />
-                                    </div>
-                                </div>
-                                <div class="ys-form-group disabled">
-                                    <label class="ys-cell-2">禁用状态</label>
-                                    <div class="ys-cell-10">
-                                        <select class="ys-field" disabled="disabled" >
-                                            <option>选项一</option>
-                                            <option>选项二</option>
-                                            <option>选项三</option>
-                                            <option>选项四</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="ys-form-group disabled">
-                                    <label class="ys-cell-2">禁用状态</label>
-                                    <div class="ys-cell-10">
-                                        <div class="ys-checkbox">
-                                            <label>
-                                                <input type="checkbox" value="1" disabled="disabled">
-                                                选项一
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ys-form-group disabled">
-                                    <label class="ys-cell-2">禁用状态</label>
-                                    <div class="ys-cell-10">
-                                        <div class="ys-radio">
-                                            <label>
-                                                <input type="radio" value="1" disabled="disabled">
-                                                选项一
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ys-form-group disabled">
-                                    <label class="ys-cell-2">禁用状态</label>
-                                    <div class="ys-cell-10">
-                                        <textarea class="ys-field" disabled="disabled" placeholder="禁用状体"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <pre class="prettyprint linenums">
+    </pre>
+</div>
+<p>
+    表单组状态，在<strong>ys-form-group</strong>添加状态类。
+</p>
+<div class="show-code">
+    <div class="show-code-result">
+        <div class="ys-form-group disabled">
+            <label class="ys-cell-2">禁用状态</label>
+            <div class="ys-cell-10">
+                <input type="text" class="ys-field" placeholder="禁用状体" disabled="disabled" />
+            </div>
+        </div>
+        <div class="ys-form-group disabled">
+            <label class="ys-cell-2">禁用状态</label>
+            <div class="ys-cell-10">
+                <select class="ys-field" disabled="disabled" >
+                    <option>选项一</option>
+                    <option>选项二</option>
+                    <option>选项三</option>
+                    <option>选项四</option>
+                </select>
+            </div>
+        </div>
+        <div class="ys-form-group disabled">
+            <label class="ys-cell-2">禁用状态</label>
+            <div class="ys-cell-10">
+                <div class="ys-checkbox">
+                    <label>
+                        <input type="checkbox" value="1" disabled="disabled">
+                        选项一
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="ys-form-group disabled">
+            <label class="ys-cell-2">禁用状态</label>
+            <div class="ys-cell-10">
+                <div class="ys-radio">
+                    <label>
+                        <input type="radio" value="1" disabled="disabled">
+                        选项一
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="ys-form-group disabled">
+            <label class="ys-cell-2">禁用状态</label>
+            <div class="ys-cell-10">
+                <textarea class="ys-field" disabled="disabled" placeholder="禁用状体"></textarea>
+            </div>
+        </div>
+    </div>
+    <pre class="prettyprint linenums">
 &lt;div class="ys-form-group disabled"&gt;
     &lt;label class="ys-cell-2"&gt;禁用状态&lt;/label&gt;
     &lt;div class="ys-cell-10"&gt;
@@ -980,78 +820,69 @@
     &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-                            </pre>
+    </pre>
+</div>
+<p>
+    表单状态。
+</p>
+<div class="show-code">
+    <div class="show-code-result">
+        <form class="ys-form disabled">
+            <fieldset disabled>
+                <div class="ys-form-group">
+                    <label class="ys-cell-2">用户名</label>
+                    <div class="ys-cell-10">
+                        <input type="text" class="ys-field">
+                    </div>
+                </div>
+                <div class="ys-form-group">
+                    <label class="ys-cell-2">手机号</label>
+                    <div class="ys-cell-10">
+                        <input type="text" class="ys-field">
+                    </div>
+                </div>
+                <div class="ys-form-group">
+                    <label class="ys-cell-2">地址</label>
+                    <div class="ys-cell-10">
+                        <input type="text" class="ys-field">
+                    </div>
+                </div>
+                <div class="ys-form-group">
+                    <label class="ys-cell-2">密码</label>
+                    <div class="ys-cell-10">
+                        <input type="text" class="ys-field">
+                    </div>
+                </div>
+                <div class="ys-form-group">
+                    <label class="ys-cell-2">性别</label>
+                    <div class="ys-cell-10">
+                        <div class="ys-radio ys-radio-inline">
+                            <label>
+                                <input type="radio" value="1" name="sex">
+                                单选款 - 选项1
+                            </label>
                         </div>
-                        <p>
-                            表单状态。
-                        </p>
-                        <div class="show-code">
-                            <div class="show-code-result">
-                                <form class="ys-form disabled">
-                                    <fieldset disabled>
-                                        <div class="ys-form-group">
-                                            <label class="ys-cell-2">用户名</label>
-                                            <div class="ys-cell-10">
-                                                <input type="text" class="ys-field">
-                                            </div>
-                                        </div>
-                                        <div class="ys-form-group">
-                                            <label class="ys-cell-2">手机号</label>
-                                            <div class="ys-cell-10">
-                                                <input type="text" class="ys-field">
-                                            </div>
-                                        </div>
-                                        <div class="ys-form-group">
-                                            <label class="ys-cell-2">地址</label>
-                                            <div class="ys-cell-10">
-                                                <input type="text" class="ys-field">
-                                            </div>
-                                        </div>
-                                        <div class="ys-form-group">
-                                            <label class="ys-cell-2">密码</label>
-                                            <div class="ys-cell-10">
-                                                <input type="text" class="ys-field">
-                                            </div>
-                                        </div>
-                                        <div class="ys-form-group">
-                                            <label class="ys-cell-2">性别</label>
-                                            <div class="ys-cell-10">
-                                                <div class="ys-radio ys-radio-inline">
-                                                    <label>
-                                                        <input type="radio" value="1" name="sex">
-                                                        单选款 - 选项1
-                                                    </label>
-                                                </div>
-                                                <div class="ys-radio ys-radio-inline">
-                                                    <label>
-                                                        <input type="radio" value="1" name="sex">
-                                                        单选款 - 选项1
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="ys-form-group">
-                                            <label class="ys-cell-2">备注</label>
-                                            <div class="ys-cell-10">
-                                                <textarea class="ys-field"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="ys-form-group">
-                                            <div class="ys-cell-2"></div>
-                                            <div class="ys-cell-10">
-                                                <button class="ys-btn ys-color-btn-primary disabled">提交</button>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-                                </form>
-                            </div>
+                        <div class="ys-radio ys-radio-inline">
+                            <label>
+                                <input type="radio" value="1" name="sex">
+                                单选款 - 选项1
+                            </label>
                         </div>
-        			</div>
-        		</div>
-        	</div>
-        </div>
+                    </div>
+                </div>
+                <div class="ys-form-group">
+                    <label class="ys-cell-2">备注</label>
+                    <div class="ys-cell-10">
+                        <textarea class="ys-field"></textarea>
+                    </div>
+                </div>
+                <div class="ys-form-group">
+                    <div class="ys-cell-2"></div>
+                    <div class="ys-cell-10">
+                        <button class="ys-btn ys-color-btn-primary disabled">提交</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
     </div>
-    <script type="text/javascript" src="asset/js/jquery/jquery.js"></script>
-    <script type="text/javascript" src="asset/js/index/index.js"></script>
-</body>
-</html>
+</div>

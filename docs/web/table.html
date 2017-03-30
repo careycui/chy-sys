@@ -1,196 +1,37 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>电商前端</title>
-	<link rel="stylesheet" type="text/css" href="ys/sys.min.css">
-	<link rel="stylesheet" type="text/css" href="ys/lib/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="asset/css/index/index.css">
-	<link rel="stylesheet" type="text/css" href="asset/css/prettify.css">
-	<script type="text/javascript" src="asset/js/common/prettify.js"></script>
-</head>
-<body onload="prettyPrint()">
-	<header class="header">
-		<div class="ys-nav ys-nav-dark ys-nav-horizontal">
-			<div class="ys-nav-brand">
-				<a href="/" class="ys-nav-brand-logo">
-					<img src="https://statics.ys7.com/newmall/b2c/images/index/logo.png">
-				</a>
-				<span class="ys-nav-brand-title">
-					YSUI<em>v1.0</em>
-				</span>
-			</div>
-			<ul class="ys-nav-navbar ys-nav-navbar-left">
-				<li>
-					<a href="">Example</a>
-				</li>
-				<li class="active">
-					<a href="">Tutorials</a>
-				</li>
-				<li>
-					<a href="">Contacts</a>
-				</li>
-			</ul>
-			<ul class="ys-nav-navbar ys-nav-navbar-right">
-				<li>
-					<a href="">Pages</a>
-				</li>
-			</ul>
-		</div>
-	</header>
-	<div class="content">
-        <div class="banner page-banner">
-            <div class="container">
-            	<h1>Tutorials</h1>
-            </div>
-        </div>
-        <div class="page-container">
-        	<div class="ys-grid">
-        		<div class="ys-grid-row">
-        			<div class="ys-cell-3 left-nav">
-        				<div class="ys-nav ys-nav-vertical ys-nav-border ys-nav-radius">
-                            <div class="ys-nav-brand">
-                                <span class="ys-nav-brand-title">
-                                    基本样式
-                                </span>
-                            </div>
-                            <ul class="ys-nav-navbar">
-                                <li>
-                                    <a href="index.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        样式统一 (Normalize)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="base.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        基础设置 (Base)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="typography.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        文字排版 (Typography)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="ys-nav-brand">
-                                <span class="ys-nav-brand-title">
-                                    布局相关
-                                </span>
-                            </div>
-                            <ul class="ys-nav-navbar">
-                                <li>
-                                    <a href="grid.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        网格 (类Bootstrap Grid)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="ys-nav-brand">
-                                <span class="ys-nav-brand-title">
-                                    基本元素
-                                </span>
-                            </div>
-                            <ul class="ys-nav-navbar">
-                                <li>
-                                    <a href="button.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        按钮 (Button)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                                <li>    
-                                    <a href="image.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        图片 (Image)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                                <li class="active">
-                                    <a href="table.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        表格 (Table)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                                <li>    
-                                    <a href="form.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        表单 (Form)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="ys-nav-brand">
-                                <span class="ys-nav-brand-title">
-                                    常用组件
-                                </span>
-                            </div>
-                            <ul class="ys-nav-navbar">
-                                <li>
-                                    <a href="nav.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        导航条 (Nav)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="button_group.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        按钮组 (Button Group)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="dialog.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        弹窗 (Dialog)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-        			</div>
-        			<div class="ys-cell-9 right-content">
-        				<h3>表格 <small>Table</small></h3>
-        				<hr>
-                        <h4>1、基本样式表格</h4>
-        				<p>
-        					基本样式表格 <strong>ys-table</strong>。添加 <strong>ys-table-hover</strong> 增加悬浮状态。 
-        				</p>
-                        <div class="show-code">
-                            <div class="show-code-result">
-                                 <table class="ys-table ys-table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th>标题 1</th>
-                                            <th>标题 2</th>
-                                            <th>标题 3</th>
-                                            <th>标题 4</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>数据 1</td>
-                                            <td>数据 2</td>
-                                            <td>数据 3</td>
-                                            <td>数据 4</td>
-                                        </tr>
-                                        <tr>
-                                            <td>数据 21</td>
-                                            <td>数据 22</td>
-                                            <td>数据 23</td>
-                                            <td>数据 24</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <pre class="prettyprint linenums">
+<h3>表格 <small>Table</small></h3>
+<hr>
+<h4>1、基本样式表格</h4>
+<p>
+	基本样式表格 <strong>ys-table</strong>。添加 <strong>ys-table-hover</strong> 增加悬浮状态。 
+</p>
+<div class="show-code">
+    <div class="show-code-result">
+         <table class="ys-table ys-table-hover">
+            <thead>
+                <tr>
+                    <th>标题 1</th>
+                    <th>标题 2</th>
+                    <th>标题 3</th>
+                    <th>标题 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>数据 1</td>
+                    <td>数据 2</td>
+                    <td>数据 3</td>
+                    <td>数据 4</td>
+                </tr>
+                <tr>
+                    <td>数据 21</td>
+                    <td>数据 22</td>
+                    <td>数据 23</td>
+                    <td>数据 24</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <pre class="prettyprint linenums">
 &lt;table class="ys-table ys-table-hover"&gt;
     &lt;thead&gt;
         &lt;tr&gt;
@@ -206,52 +47,52 @@
             ......
     &lt;/tbody&gt;
 &lt;/table&gt;
-                            </pre>
-                        </div>
-                        <h4>2、条纹表格</h4>
-                        <p>
-                            条纹表格 <strong>ys-table-striped</strong>。
-                        </p>
-                        <div class="show-code">
-                            <div class="show-code-result">
-                                 <table class="ys-table ys-table-striped ys-table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th>标题 1</th>
-                                            <th>标题 2</th>
-                                            <th>标题 3</th>
-                                            <th>标题 4</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>数据 1</td>
-                                            <td>数据 2</td>
-                                            <td>数据 3</td>
-                                            <td>数据 4</td>
-                                        </tr>
-                                        <tr>
-                                            <td>数据 21</td>
-                                            <td>数据 22</td>
-                                            <td>数据 23</td>
-                                            <td>数据 24</td>
-                                        </tr>
-                                        <tr>
-                                            <td>数据 1</td>
-                                            <td>数据 2</td>
-                                            <td>数据 3</td>
-                                            <td>数据 4</td>
-                                        </tr>
-                                        <tr>
-                                            <td>数据 21</td>
-                                            <td>数据 22</td>
-                                            <td>数据 23</td>
-                                            <td>数据 24</td>
-                                        </tr> 
-                                    </tbody>
-                                </table>
-                            </div>
-                            <pre class="prettyprint linenums">
+    </pre>
+</div>
+<h4>2、条纹表格</h4>
+<p>
+    条纹表格 <strong>ys-table-striped</strong>。
+</p>
+<div class="show-code">
+    <div class="show-code-result">
+         <table class="ys-table ys-table-striped ys-table-hover">
+            <thead>
+                <tr>
+                    <th>标题 1</th>
+                    <th>标题 2</th>
+                    <th>标题 3</th>
+                    <th>标题 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>数据 1</td>
+                    <td>数据 2</td>
+                    <td>数据 3</td>
+                    <td>数据 4</td>
+                </tr>
+                <tr>
+                    <td>数据 21</td>
+                    <td>数据 22</td>
+                    <td>数据 23</td>
+                    <td>数据 24</td>
+                </tr>
+                <tr>
+                    <td>数据 1</td>
+                    <td>数据 2</td>
+                    <td>数据 3</td>
+                    <td>数据 4</td>
+                </tr>
+                <tr>
+                    <td>数据 21</td>
+                    <td>数据 22</td>
+                    <td>数据 23</td>
+                    <td>数据 24</td>
+                </tr> 
+            </tbody>
+        </table>
+    </div>
+    <pre class="prettyprint linenums">
 &lt;table class="ys-table ys-table-striped ys-table-hover"&gt;
     &lt;thead&gt;
         &lt;tr&gt;
@@ -268,52 +109,52 @@
         &lt;/tr&gt;
     &lt;/tbody&gt;
 &lt;/table&gt;
-                            </pre>
-                        </div>
-                        <h4>3、边框表格</h4>
-                        <p>
-                            边框表格 <strong>ys-table-striped</strong>。添加 <strong>ys-table-radius</strong> 增加圆角。
-                        </p>
-                        <div class="show-code">
-                            <div class="show-code-result">
-                                 <table class="ys-table ys-table-bordered ys-table-radius ys-table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th>标题 1</th>
-                                            <th>标题 2</th>
-                                            <th>标题 3</th>
-                                            <th>标题 4</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>数据 1</td>
-                                            <td>数据 2</td>
-                                            <td>数据 3</td>
-                                            <td>数据 4</td>
-                                        </tr>
-                                        <tr>
-                                            <td>数据 21</td>
-                                            <td>数据 22</td>
-                                            <td>数据 23</td>
-                                            <td>数据 24</td>
-                                        </tr>
-                                        <tr>
-                                            <td>数据 1</td>
-                                            <td>数据 2</td>
-                                            <td>数据 3</td>
-                                            <td>数据 4</td>
-                                        </tr>
-                                        <tr>
-                                            <td>数据 21</td>
-                                            <td>数据 22</td>
-                                            <td>数据 23</td>
-                                            <td>数据 24</td>
-                                        </tr> 
-                                    </tbody>
-                                </table>
-                            </div>
-                            <pre class="prettyprint linenums">
+    </pre>
+</div>
+<h4>3、边框表格</h4>
+<p>
+    边框表格 <strong>ys-table-striped</strong>。添加 <strong>ys-table-radius</strong> 增加圆角。
+</p>
+<div class="show-code">
+    <div class="show-code-result">
+         <table class="ys-table ys-table-bordered ys-table-radius ys-table-hover">
+            <thead>
+                <tr>
+                    <th>标题 1</th>
+                    <th>标题 2</th>
+                    <th>标题 3</th>
+                    <th>标题 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>数据 1</td>
+                    <td>数据 2</td>
+                    <td>数据 3</td>
+                    <td>数据 4</td>
+                </tr>
+                <tr>
+                    <td>数据 21</td>
+                    <td>数据 22</td>
+                    <td>数据 23</td>
+                    <td>数据 24</td>
+                </tr>
+                <tr>
+                    <td>数据 1</td>
+                    <td>数据 2</td>
+                    <td>数据 3</td>
+                    <td>数据 4</td>
+                </tr>
+                <tr>
+                    <td>数据 21</td>
+                    <td>数据 22</td>
+                    <td>数据 23</td>
+                    <td>数据 24</td>
+                </tr> 
+            </tbody>
+        </table>
+    </div>
+    <pre class="prettyprint linenums">
 &lt;table class="ys-table ys-table-striped ys-table-radius ys-table-hover"&gt;
     &lt;thead&gt;
         &lt;tr&gt;
@@ -330,54 +171,54 @@
         &lt;/tr&gt;
     &lt;/tbody&gt;
 &lt;/table&gt;
-                            </pre>
-                        </div>
-                        <h4>4、工具条表格</h4>
-                        <p>
-                            工具条表格 <strong>ys-table-striped</strong>。
-                        </p>
-                        <div class="show-code">
-                            <div class="show-code-result">
-                                <div class="ys-tool-table">
-                                    <div class="ys-tool-table-header">
-                                        <h4>工具条表格</h4>
-                                        <div class="ys-table-toolbar">
-                                            <button class="ys-btn"><i class="fa fa-plus"></i>添加</button>
-                                        </div>
-                                    </div>
-                                    <div class="ys-table-main-toolbar">
-                                        <button class="ys-btn ys-link-btn ys-btn-sm"><i class="fa fa-plus"></i> 添加</button>
-                                        <button class="ys-btn ys-link-btn ys-btn-sm"><i class="fa fa-minus"></i> 删除</button>
-                                        <button class="ys-btn ys-link-btn ys-btn-sm"><i class="fa fa-pencil"></i> 编辑</button>
-                                        <button class="ys-btn ys-link-btn ys-btn-sm"><i class="fa fa-search"></i> 搜索</button>
-                                    </div>
-                                    <table class="ys-table">
-                                        <thead>
-                                            <tr>
-                                                <th>标题 1</th>
-                                                <th>标题 2</th>
-                                                <th>标题 3</th>
-                                                <th>标题 4</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>数据 1</td>
-                                                <td>数据 2</td>
-                                                <td>数据 3</td>
-                                                <td>数据 4</td>
-                                            </tr>
-                                            <tr>
-                                                <td>数据 21</td>
-                                                <td>数据 22</td>
-                                                <td>数据 23</td>
-                                                <td>数据 24</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <pre class="prettyprint linenums">
+    </pre>
+</div>
+<h4>4、工具条表格</h4>
+<p>
+    工具条表格 <strong>ys-table-striped</strong>。
+</p>
+<div class="show-code">
+    <div class="show-code-result">
+        <div class="ys-tool-table">
+            <div class="ys-tool-table-header">
+                <h4>工具条表格</h4>
+                <div class="ys-table-toolbar">
+                    <button class="ys-btn"><i class="fa fa-plus"></i>添加</button>
+                </div>
+            </div>
+            <div class="ys-table-main-toolbar">
+                <button class="ys-btn ys-link-btn ys-btn-sm"><i class="fa fa-plus"></i> 添加</button>
+                <button class="ys-btn ys-link-btn ys-btn-sm"><i class="fa fa-minus"></i> 删除</button>
+                <button class="ys-btn ys-link-btn ys-btn-sm"><i class="fa fa-pencil"></i> 编辑</button>
+                <button class="ys-btn ys-link-btn ys-btn-sm"><i class="fa fa-search"></i> 搜索</button>
+            </div>
+            <table class="ys-table">
+                <thead>
+                    <tr>
+                        <th>标题 1</th>
+                        <th>标题 2</th>
+                        <th>标题 3</th>
+                        <th>标题 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>数据 1</td>
+                        <td>数据 2</td>
+                        <td>数据 3</td>
+                        <td>数据 4</td>
+                    </tr>
+                    <tr>
+                        <td>数据 21</td>
+                        <td>数据 22</td>
+                        <td>数据 23</td>
+                        <td>数据 24</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <pre class="prettyprint linenums">
 &lt;div class="ys-tool-table"&gt;
     &lt;div class="ys-tool-table-header"&gt;
         &lt;h4&gt;工具条表格&lt;/h4&gt;
@@ -408,15 +249,5 @@
         &lt;/tbody&gt;
     &lt;/table&gt;
 &lt;/div&gt;
-                            </pre>
-                        </div>
-
-        			</div>
-        		</div>
-        	</div>
-        </div>
-    </div>
-    <script type="text/javascript" src="asset/js/jquery/jquery.js"></script>
-    <script type="text/javascript" src="asset/js/index/index.js"></script>
-</body>
-</html>
+    </pre>
+</div>

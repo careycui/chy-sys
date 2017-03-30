@@ -1,276 +1,117 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>电商前端</title>
-	<link rel="stylesheet" type="text/css" href="ys/sys.min.css">
-	<link rel="stylesheet" type="text/css" href="ys/lib/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="asset/css/index/index.css">
-	<link rel="stylesheet" type="text/css" href="asset/css/prettify.css">
-	<script type="text/javascript" src="asset/js/common/prettify.js"></script>
-</head>
-<body onload="prettyPrint()">
-	<header class="header">
-		<div class="ys-nav ys-nav-dark ys-nav-horizontal">
-			<div class="ys-nav-brand">
-				<a href="/" class="ys-nav-brand-logo">
-					<img src="https://statics.ys7.com/newmall/b2c/images/index/logo.png">
-				</a>
-				<span class="ys-nav-brand-title">
-					YSUI<em>v1.0</em>
-				</span>
-			</div>
-			<ul class="ys-nav-navbar ys-nav-navbar-left">
-				<li>
-					<a href="">Example</a>
-				</li>
-				<li class="active">
-					<a href="">Tutorials</a>
-				</li>
-				<li>
-					<a href="">Contacts</a>
-				</li>
-			</ul>
-			<ul class="ys-nav-navbar ys-nav-navbar-right">
-				<li>
-					<a href="">Pages</a>
-				</li>
-			</ul>
-		</div>
-	</header>
-	<div class="content">
-        <div class="banner page-banner">
-            <div class="container">
-            	<h1>Tutorials</h1>
+<h3>网格 <small>类Bootsrap Grid</small></h3>
+<hr>
+<h4>1、基本</h4>
+<p>
+	参考Bootstrap的网格规范，划分为12列网格。通过添加<strong>ys-cell-[列数]</strong>类来控制网格，通过添加<strong>ys-cell-[列数]-[tablet|phone]</strong>确定响应式显示。
+</p>
+<table class="ys-table ys-table-bordered ys-table-left">
+    <caption>控制元素</caption>
+    <thead>
+        <tr>
+            <th>class</th>
+            <th>控制内容</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                ys-grid
+            </td>
+            <td>
+                网格的行或列需要包含在此内，赋予正确内外边距
+            </td>
+        </tr>
+        <tr>
+            <td>
+                ys-grid-row
+            </td>
+            <td>
+                包含一行的列
+            </td>
+        </tr>
+        <tr>    
+            <td>
+                ys-cell-[列数]
+            </td>
+            <td>
+                0~12列数，为0时写为ys-cel，填满一行。当一行包含列大于12时另起一行。
+            </td>
+        </tr>
+        <tr>    
+            <td>
+                ys-cell-[列数]-[tablet|phone]
+            </td>
+            <td>
+                ys-grid width 1200px > 1199px <br>
+                 959px ~ 1199px <br>
+                tablet 479px ~ 959px <br>
+                phone < 479px
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table class="ys-table ys-table-bordered ys-table-left ys-table-radius">
+    <caption>
+        屏幕划分
+    </caption>
+    <thead>
+        <tr>
+            <th>&nbsp;</th>
+            <th>&gt; 1199px</th>
+            <th>959px ~ 1200px</th>
+            <th>479px ~ 960px</th>
+            <th>&lt; 480px</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ys-grid 宽</td>
+            <td> 100%  </td>
+            <td> 100%  </td>
+            <td> 100% </td>
+            <td> 100% </td>
+        </tr>
+        <tr>
+            <td>ys-fixed-grid 宽</td>
+            <td> 1200px </td>
+            <td> 960px </td>
+            <td> 100% </td>
+            <td> 100% </td>
+        </tr>
+        <tr>
+            <td>最大列数(超出的列100%)</td>
+            <td> 12 </td>
+            <td> 12 </td>
+            <td> 8 </td>
+            <td> 4 </td>
+        </tr>
+    </tbody>
+</table>
+<h4>2、基本使用</h4>
+<p>
+   .ys-grid/.ys-grid-row/.ys-cell-[x]结合使用。 
+</p>
+<h6>2.1、平铺</h6>
+<div class="show-code">
+	<div class="show-code-result grid">
+        <div class="ys-grid">
+            <div class="ys-grid-row">
+                <div class="ys-cell-1">CELL 1</div>
+                <div class="ys-cell-2">CELL 2</div>
+                <div class="ys-cell-3">CELL 3</div>
+                <div class="ys-cell-4">CELL 4</div>
+                <div class="ys-cell-5">CELL 5</div>
+                <div class="ys-cell-6">CELL 6</div>
+                <div class="ys-cell-7">CELL 7</div>
+                <div class="ys-cell-8">CELL 8</div>
+                <div class="ys-cell-9">CELL 9</div>
+                <div class="ys-cell-10">CELL 10</div>
+                <div class="ys-cell-11">CELL 11</div>
+                <div class="ys-cell-12">CELL 12</div>
             </div>
         </div>
-        <div class="page-container">
-        	<div class="ys-grid">
-        		<div class="ys-grid-row">
-        			<div class="ys-cell-3 left-nav">
-        				<div class="ys-nav ys-nav-vertical ys-nav-border ys-nav-radius">
-        					<div class="ys-nav-brand">
-								<span class="ys-nav-brand-title">
-									基本样式
-								</span>
-							</div>
-        					<ul class="ys-nav-navbar">
-        						<li>
-        							<a href="index.html">
-        								<i class="fa fa-angle-right"></i>
-        								样式统一 (Normalize)
-        								<i class="fa fa-angle-left"></i> 
-        							</a>
-        						</li>
-        						<li>
-        							<a href="base.html">
-        								<i class="fa fa-angle-right"></i>
-        								基础设置 (Base)
-        								<i class="fa fa-angle-left"></i> 
-        							</a>
-        						</li>
-        						<li>
-        							<a href="typography.html">
-        								<i class="fa fa-angle-right"></i>
-        								文字排版 (Typography)
-        								<i class="fa fa-angle-left"></i> 
-        							</a>
-        						</li>
-        					</ul>
-        					<div class="ys-nav-brand">
-								<span class="ys-nav-brand-title">
-									布局相关
-								</span>
-							</div>
-        					<ul class="ys-nav-navbar">
-        						<li class="active">
-        							<a href="grid.html">
-        								<i class="fa fa-angle-right"></i>
-        								网格 (类Bootstrap Grid)
-        								<i class="fa fa-angle-left"></i> 
-        							</a>
-        						</li>
-        					</ul>
-        					<div class="ys-nav-brand">
-								<span class="ys-nav-brand-title">
-									基本元素
-								</span>
-							</div>
-        					<ul class="ys-nav-navbar">
-        						<li>
-        							<a href="button.html">
-        								<i class="fa fa-angle-right"></i>
-        								按钮 (Button)
-        								<i class="fa fa-angle-left"></i> 
-        							</a>
-        						</li>
-        						<li>	
-        							<a href="image.html">
-        								<i class="fa fa-angle-right"></i>
-        								图片 (Image)
-        								<i class="fa fa-angle-left"></i> 
-        							</a>
-                                </li>
-                                <li>
-        							<a href="table.html">
-        								<i class="fa fa-angle-right"></i>
-        								表格 (Table)
-        								<i class="fa fa-angle-left"></i> 
-        							</a>
-        						</li>
-        						<li>	
-        							<a href="form.html">
-        								<i class="fa fa-angle-right"></i>
-        								表单 (Form)
-        								<i class="fa fa-angle-left"></i> 
-        							</a>
-        						</li>
-        					</ul>
-        					<div class="ys-nav-brand">
-								<span class="ys-nav-brand-title">
-									常用组件
-								</span>
-							</div>
-        					<ul class="ys-nav-navbar">
-        						<li>
-        							<a href="nav.html">
-        								<i class="fa fa-angle-right"></i>
-        								导航条 (Nav)
-        								<i class="fa fa-angle-left"></i> 
-        							</a>
-        						</li>
-        						<li>
-        							<a href="button_group.html">
-        								<i class="fa fa-angle-right"></i>
-        								按钮组 (Button Group)
-        								<i class="fa fa-angle-left"></i> 
-        							</a>
-        						</li>
-        						<li>
-        							<a href="dialog.html">
-        								<i class="fa fa-angle-right"></i>
-        								弹窗 (Dialog)
-        								<i class="fa fa-angle-left"></i> 
-        							</a>
-        						</li>
-        					</ul>
-        				</div>
-        			</div>
-        			<div class="ys-cell-9 right-content">
-        				<h3>网格 <small>类Bootsrap Grid</small></h3>
-        				<hr>
-                        <h4>1、基本</h4>
-                        <p>
-                        	参考Bootstrap的网格规范，划分为12列网格。通过添加<strong>ys-cell-[列数]</strong>类来控制网格，通过添加<strong>ys-cell-[列数]-[tablet|phone]</strong>确定响应式显示。
-                        </p>
-                        <table class="ys-table ys-table-bordered ys-table-left">
-                            <caption>控制元素</caption>
-                            <thead>
-                                <tr>
-                                    <th>class</th>
-                                    <th>控制内容</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        ys-grid
-                                    </td>
-                                    <td>
-                                        网格的行或列需要包含在此内，赋予正确内外边距
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        ys-grid-row
-                                    </td>
-                                    <td>
-                                        包含一行的列
-                                    </td>
-                                </tr>
-                                <tr>    
-                                    <td>
-                                        ys-cell-[列数]
-                                    </td>
-                                    <td>
-                                        0~12列数，为0时写为ys-cel，填满一行。当一行包含列大于12时另起一行。
-                                    </td>
-                                </tr>
-                                <tr>    
-                                    <td>
-                                        ys-cell-[列数]-[tablet|phone]
-                                    </td>
-                                    <td>
-                                        ys-grid width 1200px > 1199px <br>
-                                         959px ~ 1199px <br>
-                                        tablet 479px ~ 959px <br>
-                                        phone < 479px
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <table class="ys-table ys-table-bordered ys-table-left ys-table-radius">
-                            <caption>
-                                屏幕划分
-                            </caption>
-                            <thead>
-                                <tr>
-                                    <th>&nbsp;</th>
-                                    <th>&gt; 1199px</th>
-                                    <th>959px ~ 1200px</th>
-                                    <th>479px ~ 960px</th>
-                                    <th>&lt; 480px</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>ys-grid 宽</td>
-                                    <td> 100%  </td>
-                                    <td> 100%  </td>
-                                    <td> 100% </td>
-                                    <td> 100% </td>
-                                </tr>
-                                <tr>
-                                    <td>ys-fixed-grid 宽</td>
-                                    <td> 1200px </td>
-                                    <td> 960px </td>
-                                    <td> 100% </td>
-                                    <td> 100% </td>
-                                </tr>
-                                <tr>
-                                    <td>最大列数(超出的列100%)</td>
-                                    <td> 12 </td>
-                                    <td> 12 </td>
-                                    <td> 8 </td>
-                                    <td> 4 </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <h4>2、基本使用</h4>
-                        <p>
-                           .ys-grid/.ys-grid-row/.ys-cell-[x]结合使用。 
-                        </p>
-                        <h6>2.1、平铺</h6>
-        				<div class="show-code">
-        					<div class="show-code-result grid">
-                                <div class="ys-grid">
-                                    <div class="ys-grid-row">
-                                        <div class="ys-cell-1">CELL 1</div>
-                                        <div class="ys-cell-2">CELL 2</div>
-                                        <div class="ys-cell-3">CELL 3</div>
-                                        <div class="ys-cell-4">CELL 4</div>
-                                        <div class="ys-cell-5">CELL 5</div>
-                                        <div class="ys-cell-6">CELL 6</div>
-                                        <div class="ys-cell-7">CELL 7</div>
-                                        <div class="ys-cell-8">CELL 8</div>
-                                        <div class="ys-cell-9">CELL 9</div>
-                                        <div class="ys-cell-10">CELL 10</div>
-                                        <div class="ys-cell-11">CELL 11</div>
-                                        <div class="ys-cell-12">CELL 12</div>
-                                    </div>
-                                </div>
-        					</div>
-							<pre class="prettyprint linenums">
+	</div>
+	<pre class="prettyprint linenums">
 &lt;div class="ys-grid"&gt;
     &lt;div class="ys-grid-row"&gt;
         &lt;div class="ys-cell-1"&gt;CELL 1&lt;/div&gt;
@@ -287,22 +128,22 @@
         &lt;div class="ys-cell-12"&gt;CELL 12&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
-							</pre>
-        			    </div>
-                        <h6>2.2、嵌套</h6>
-                        <div class="show-code">
-                            <div class="show-code-result">
-                                <div class="ys-grid">
-                                    <div class="ys-grid-row">
-                                        <div class="ys-cell-6">
-                                            <p>CELL 6</p>
-                                            <div class="ys-cell-3">CELL 3</div>
-                                            <div class="ys-cell-9">CELL 9</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <pre class="prettyprint linenums">
+	</pre>
+</div>
+<h6>2.2、嵌套</h6>
+<div class="show-code">
+    <div class="show-code-result">
+        <div class="ys-grid">
+            <div class="ys-grid-row">
+                <div class="ys-cell-6">
+                    <p>CELL 6</p>
+                    <div class="ys-cell-3">CELL 3</div>
+                    <div class="ys-cell-9">CELL 9</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <pre class="prettyprint linenums">
 &lt;div class="ys-grid"&gt;
     &lt;div class="ys-grid-row"&gt;
         &lt;div class="ys-cell-6"&gt;
@@ -312,19 +153,9 @@
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
-                            </pre>
-                        </div>
-                        <h6>2.3、偏移</h6>
-                        <p><span class="text-tip-danger">待添加</span></p>
-                        <h6>2.4、居中</h6>
-                        <p><span class="text-tip-danger">待添加</span></p>
-
-                    </div>
-        		</div>
-        	</div>
-        </div>
-    </div>
-    <script type="text/javascript" src="asset/js/jquery/jquery.js"></script>
-    <script type="text/javascript" src="asset/js/index/index.js"></script>
-</body>
-</html>
+    </pre>
+</div>
+<h6>2.3、偏移</h6>
+<p><span class="text-tip-danger">待添加</span></p>
+<h6>2.4、居中</h6>
+<p><span class="text-tip-danger">待添加</span></p>

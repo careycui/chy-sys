@@ -1,10 +1,72 @@
-page('/base.html',function(cnt,next){
-	$('#view').load('./base.html');
+function load(path,fn){
+	$('#view').load('.'+ path,function(){
+		fn && fn();
+	});
+}
+page('/',function(cnt,next){
+	load('/reset.html',function(){
+		prettyPrint();
+	});
 });
+page('/reset.html',function(cnt,next){
+	load(cnt.path,function(){
+		prettyPrint()
+	});
+});
+page('/base.html',function(cnt,next){
+	load(cnt.path,function(){
+		prettyPrint()
+	});
+});
+page('/button.html',function(cnt,next){
+	load(cnt.path,function(){
+		prettyPrint()
+	});
+});
+page('/button_group.html',function(cnt,next){
+	load(cnt.path,function(){
+		prettyPrint()
+	});
+});
+page('/dialog.html',function(cnt,next){
+	load(cnt.path,function(){
+		prettyPrint()
+	});
+});
+page('/form.html',function(cnt,next){
+	load(cnt.path,function(){
+		prettyPrint()
+	});
+});
+page('/grid.html',function(cnt,next){
+	load(cnt.path,function(){
+		prettyPrint()
+	});
+});
+page('/image.html',function(cnt,next){
+	load(cnt.path,function(){
+		prettyPrint()
+	});
+});
+page('/nav.html',function(cnt,next){
+	load(cnt.path,function(){
+		prettyPrint()
+	});
+});
+page('/table.html',function(cnt,next){
+	load(cnt.path,function(){
+		prettyPrint()
+	});
+});
+page('/typography.html',function(cnt,next){
+	load(cnt.path,function(){
+		prettyPrint()
+	});
+});
+page();
 
 $('a').on('click',function(e){
 	e.preventDefault();
 	var href = $(this).data('href');
 	page(href);
-	console.log(href);
 });

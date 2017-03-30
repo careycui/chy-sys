@@ -26,4 +26,15 @@ $(function(){
 			timeId = '';
 		},16);
 	});
+
+	$('.ys-nav-navbar').on('click','li',function(){
+		var $lis = $('.ys-nav-navbar li');
+		if($(this).hasClass('active')){
+			return;
+		}
+		$.each($lis,function(i,ele){
+			$(ele).removeClass('active');
+		});
+		$(this).addClass('active');
+	});
 });

@@ -1,188 +1,29 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>电商前端</title>
-	<link rel="stylesheet" type="text/css" href="ys/sys.css">
-	<link rel="stylesheet" type="text/css" href="ys/lib/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="asset/css/index/index.css">
-	<link rel="stylesheet" type="text/css" href="asset/css/prettify.css">
-	<script type="text/javascript" src="asset/js/common/prettify.js"></script>
-</head>
-<body onload="prettyPrint()">
-	<header class="header">
-		<div class="ys-nav ys-nav-dark ys-nav-horizontal">
-			<div class="ys-nav-brand">
-				<a href="/" class="ys-nav-brand-logo">
-					<img src="https://statics.ys7.com/newmall/b2c/images/index/logo.png">
-				</a>
-				<span class="ys-nav-brand-title">
-					YSUI<em>v1.0</em>
-				</span>
-			</div>
-			<ul class="ys-nav-navbar ys-nav-navbar-left">
-				<li>
-					<a href="">Example</a>
-				</li>
-				<li class="active">
-					<a href="">Tutorials</a>
-				</li>
-				<li>
-					<a href="">Contacts</a>
-				</li>
-			</ul>
-			<ul class="ys-nav-navbar ys-nav-navbar-right">
-				<li>
-					<a href="">Pages</a>
-				</li>
-			</ul>
-		</div>
-	</header>
-	<div class="content">
-        <div class="banner page-banner">
-            <div class="container">
-            	<h1>Tutorials</h1>
+<h3>弹窗 <small>Dialog</small></h3>
+<hr>
+<h4>1、弹窗基本样式</h4>
+<p>
+	由弹窗内容width height决定弹窗大小。
+</p>
+<div class="show-code">
+    <div class="show-code-result" style="height:600px;">
+        <div class="ys-dialog" style="position:absolute;">
+            <div class="ys-backdrop-mask"></div>
+            <div class="ys-dialog-container">
+                <div class="ys-dialog-container-in">
+                    <div class="ys-dialog-content">
+                        <h4 style="margin-bottom: 0px;">弹窗标题</h4>
+                        <hr>
+                        <div style="height: 200px;width: 400px;">
+                        </div>
+                        <div class="footer text-ar">
+                            <button class="ys-btn ys-color-btn-primary">确定</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="page-container">
-        	<div class="ys-grid">
-        		<div class="ys-grid-row">
-        			<div class="ys-cell-3 left-nav">
-        				<div class="ys-nav ys-nav-vertical ys-nav-border ys-nav-radius">
-                            <div class="ys-nav-brand">
-                                <span class="ys-nav-brand-title">
-                                    基本样式
-                                </span>
-                            </div>
-                            <ul class="ys-nav-navbar">
-                                <li>
-                                    <a href="index.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        样式统一 (Normalize)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="base.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        基础设置 (Base)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="typography.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        文字排版 (Typography)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="ys-nav-brand">
-                                <span class="ys-nav-brand-title">
-                                    布局相关
-                                </span>
-                            </div>
-                            <ul class="ys-nav-navbar">
-                                <li>
-                                    <a href="grid.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        网格 (类Bootstrap Grid)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="ys-nav-brand">
-                                <span class="ys-nav-brand-title">
-                                    基本元素
-                                </span>
-                            </div>
-                            <ul class="ys-nav-navbar">
-                                <li>
-                                    <a href="button.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        按钮 (Button)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                                <li>    
-                                    <a href="image.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        图片 (Image)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="table.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        表格 (Table)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                                <li>    
-                                    <a href="form.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        表单 (Form)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="ys-nav-brand">
-                                <span class="ys-nav-brand-title">
-                                    常用组件
-                                </span>
-                            </div>
-                            <ul class="ys-nav-navbar">
-                                <li>
-                                    <a href="nav.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        导航条 (Nav)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="button_group.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        按钮组 (Button Group)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                                <li class="active">
-                                    <a href="dialog.html">
-                                        <i class="fa fa-angle-right"></i>
-                                        弹窗 (Dialog)
-                                        <i class="fa fa-angle-left"></i> 
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-        			</div>
-        			<div class="ys-cell-9 right-content">
-        				<h3>弹窗 <small>Dialog</small></h3>
-        				<hr>
-                        <h4>1、弹窗基本样式</h4>
-        				<p>
-        					由弹窗内容width height决定弹窗大小。
-        				</p>
-                        <div class="show-code">
-                            <div class="show-code-result" style="height:600px;">
-                                <div class="ys-dialog" style="position:absolute;">
-                                    <div class="ys-backdrop-mask"></div>
-                                    <div class="ys-dialog-container">
-                                        <div class="ys-dialog-container-in">
-                                            <div class="ys-dialog-content">
-                                                <h4 style="margin-bottom: 0px;">弹窗标题</h4>
-                                                <hr>
-                                                <div style="height: 200px;width: 400px;">
-                                                </div>
-                                                <div class="footer text-ar">
-                                                    <button class="ys-btn ys-color-btn-primary">确定</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <pre class="prettyprint linenums">
+    </div>
+    <pre class="prettyprint linenums">
 &lt;div class="ys-dialog" style="position:absolute;"&gt;
     &lt;div class="ys-backdrop-mask"&gt;&lt;/div&gt;
     &lt;div class="ys-dialog-container"&gt;
@@ -199,15 +40,5 @@
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
-                            </pre>
-                        </div>
-
-        			</div>
-        		</div>
-        	</div>
-        </div>
-    </div>
-    <script type="text/javascript" src="asset/js/jquery/jquery.js"></script>
-    <script type="text/javascript" src="asset/js/index/index.js"></script>
-</body>
-</html>
+    </pre>
+</div>
