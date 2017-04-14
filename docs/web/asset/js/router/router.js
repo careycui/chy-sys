@@ -1,5 +1,6 @@
 function load(path,fn){
-	$('#view').load('.'+ path,function(){
+	console.log(path);
+	$('#view').load('/docs/web'+path,function(){
 		fn && fn();
 	});
 }

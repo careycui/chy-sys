@@ -36,10 +36,10 @@ var httpServer = http.createServer(function(request,response){
     }
 
     //获取资源文件的相对路径
-    var filePath = path.join("web/",pathName);
+    var filePath = path.join("./",pathName);
     //获取对应文件的文档类型
     var contentType = path.extname(filePath).replace(/\./g, '');
-
+    console.log(filePath);
     //如果文件名存在
     fs.exists(filePath,function(exists){
         if(exists){

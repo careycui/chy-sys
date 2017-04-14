@@ -31,7 +31,7 @@ const paths = {
 	},
 	release:{
 		src:'dist/**/*',
-		des:'docs/ys'
+		des:'docs/web/ys'
 	}
 }
 gulp.task('css:compile',function(){
@@ -96,14 +96,18 @@ gulp.task('copy',function(){
 gulp.task('clean',function(){
 	del(['dist','release','docs/ys']);
 });
-gulp.task('default',function(){
+gulp.task('compile',function(){
 	$.runSequence('clean','css:compile','css:min',['image','script:parts','script:all','copy']);
 });
 
 // release doc
-gulp.task('release',function(){
+gulp.task('release:before',function(){
 	return gulp.src(paths.release.src)
 			.pipe(gulp.dest(paths.release.des));
+});
+
+gulp.task('release',function(){
+	$.runSequence('clean','css:compile','css:min',['image','script:parts','script:all','copy'],'release:before');
 });
 
 gulp.task('cp',function(){

@@ -2,6 +2,9 @@
   "name": "CHY_SYS",
   "version": "0.0.1",
   "author": "chy",
+  "scripts": {
+    "doc-server": "node docs/app.js"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-load-plugins": "^1.4.0"
