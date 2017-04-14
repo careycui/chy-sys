@@ -1,10 +1,9 @@
 function load(path,fn){
-	console.log(path);
 	$('#view').load('/docs/web'+path,function(){
 		fn && fn();
 	});
 }
-page('/',function(cnt,next){
+page('/docs/web/index.html',function(cnt,next){
 	load('/reset.html',function(){
 		prettyPrint();
 	});
